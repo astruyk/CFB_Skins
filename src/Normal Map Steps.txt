@@ -1,0 +1,1 @@
+use the 'Normal Map Conversion' actions to generate an Ambient Occlusion and Height Map from the normals. Requires xNormal plugin.
