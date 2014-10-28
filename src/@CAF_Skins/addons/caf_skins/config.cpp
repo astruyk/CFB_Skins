@@ -74,7 +74,9 @@ class CfgVehicles
 		nakedUniform = "U_BasicBody"; //class for "naked" body
 		uniformClass = "CAF_CADPAT_Uniform"; //the uniform item
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = { "\caf_skins\ClothingTemplate.paa" };
+		hiddenSelectionsTextures[] = { "\caf_skins\CADPAT_Uniform1_TW.paa" };
+		
+		linkedItems[] = {"V_TacVest_oli","CAF_CADPAT_TW_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
 	};
 	
 	class CAF_TW_Soldier_TL : B_Soldier_TL_F
@@ -88,7 +90,10 @@ class CfgVehicles
 		nakedUniform = "U_BasicBody"; //class for "naked" body
 		uniformClass = "CAF_CADPAT_TL_Uniform"; //the uniform item
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = { "\caf_skins\ClothingTemplate.paa" };
+		hiddenSelectionsTextures[] = { "\caf_skins\CADPAT_Uniform1_TW.paa" };
+		
+		linkedItems[] = {"V_TacVest_oli","CAF_CADPAT_TW_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
+		weapons[] = {"arifle_MX_GL_Black_F", "Throw", "Put"};
 	};
 	
 	class CAF_TW_Soldier_AR : B_soldier_AR_F
@@ -102,7 +107,9 @@ class CfgVehicles
 		nakedUniform = "U_BasicBody"; //class for "naked" body
 		uniformClass = "CAF_CADPAT_AR_Uniform"; //the uniform item
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = { "\caf_skins\ClothingTemplate.paa" };
+		hiddenSelectionsTextures[] = { "\caf_skins\CADPAT_Uniform1_TW.paa" };
+		
+		linkedItems[] = {"V_Chestrig_oli","CAF_CADPAT_TW_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
 	};
 	
 	// Helicopters
@@ -153,14 +160,17 @@ class cfgWeapons
 	class U_B_CombatUniform_mcam_vest;
 	class U_B_CombatUniform_mcam_tshirt;
 	class UniformItem;
+	class H_HelmetIA;
  
 	class CAF_CADPAT_Uniform : U_B_CombatUniform_mcam
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "CADPAD TW Rifleman Uniform";
+		displayName = "CADPAD Combat Uniform";
 		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		
+		author = "Anton Struyk";
  
 		class ItemInfo : UniformItem
 		{
@@ -175,9 +185,10 @@ class cfgWeapons
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "CADPAD TW SL Uniform";
+		displayName = "CADPAD Combat Uniform (Rolled Up)";
 		picture = "\A3\characters_f\data\ui\U_B_CombatUniform_mcam_vest.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		author = "Anton Struyk";
  
 		class ItemInfo : UniformItem
 		{
@@ -192,9 +203,10 @@ class cfgWeapons
 	{
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "CADPAD TW AR Uniform";
+		displayName = "CADPAD Combat Uniform (Tee)";
 		picture = "\A3\characters_f\data\ui\U_B_CombatUniform_mcam_tshirt.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		author = "Anton Struyk";
  
 		class ItemInfo : UniformItem
 		{
@@ -203,5 +215,19 @@ class cfgWeapons
 			containerClass = "Supply40"; //how much it can carry
 			mass = 80; //how much it weights
 		};
+	};
+	
+	class CAF_CADPAT_TW_Helmet : H_HelmetIA
+	{
+		side = 1;
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Combat Helmet (CADPAD TW)";
+		author = "Anton Struyk";
+		//model = "\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
+		//picture = "\A3\characters_F_Beta\Data\UI\icon_H_I_Helmet_canvas_ca.paa";
+		
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\caf_skins\CADPAT_Helmet1_TW.paa"};
 	};
 };
