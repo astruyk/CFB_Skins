@@ -19,7 +19,8 @@ class CfgPatches
 		{
 			CAF_CADPAT_Uniform,
 			CAF_CADPAT_TL_Uniform,
-			CAF_CADPAT_AR_Uniform
+			CAF_CADPAT_AR_Uniform,
+			CAF_CADPAT_C97A3_Sight
 		};
 		
 		units[] =
@@ -40,7 +41,8 @@ class CfgFactionClasses
 	{
 		displayName = "Canadian Armed Forces";
 		author = "Anton Struyk";
-		icon = "";
+		icon = "\caf_skins\factionLogo.paa";
+		flag = "\a3\Data_f\Flags\flag_nato_co.paa";
 		priority = 8;
 		side = 1; //Blufor
 	};
@@ -52,6 +54,17 @@ class CfgVehicleClasses
 	{
 		displayName = "CADPAT TW";
 	};
+	
+	class CAF_CADPAT_AR_VehicleClass
+	{
+		displayName = "CADPAT AR";
+	};
+	
+	class CAF_CADPAT_Arctic_VehicleClass
+	{
+		displayName = "CADPAT Arctic";
+	};
+	
 	class CAF_RCAF_VehicleClass
 	{
 		displayName = "RCAF";
@@ -66,6 +79,7 @@ class CfgVehicles
 	
 	class CAF_TW_Soldier : B_Soldier_F
 	{
+		_generalMacro  = "CAF_TW_Soldier";
 		scope = 2;
 		scopeCurator = 2;
 		faction = "CAF_Base_Faction";
@@ -81,6 +95,7 @@ class CfgVehicles
 	
 	class CAF_TW_Soldier_TL : B_Soldier_TL_F
 	{
+		_generalMacro  = "CAF_TW_Soldier_TL";
 		scope = 2;
 		scopeCurator = 2;
 		faction = "CAF_Base_Faction";
@@ -98,6 +113,7 @@ class CfgVehicles
 	
 	class CAF_TW_Soldier_AR : B_soldier_AR_F
 	{
+		_generalMacro  = "CAF_TW_Soldier_AR";
 		scope = 2;
 		scopeCurator = 2;
 		faction = "CAF_Base_Faction";
@@ -119,6 +135,7 @@ class CfgVehicles
 
 	class CAF_Helo_Griffon : I_Heli_light_03_F
 	{
+		_generalMacro  = "CAF_Helo_Griffon";
 		side = 1;
 		scope = 2;
 		scopeCurator = 2;
@@ -131,6 +148,7 @@ class CfgVehicles
 
 	class CAF_Helo_Griffon_Unarmed : I_Heli_light_03_unarmed_F
 	{
+		_generalMacro  = "CAF_Helo_Griffon_Unarmed";
 		side = 1;
 		scope = 2;
 		scopeCurator = 2;
@@ -143,6 +161,7 @@ class CfgVehicles
 
 	class CAF_Helo_Cyclone : I_Heli_Transport_02_F
 	{
+		_generalMacro  = "CAF_Helo_Cyclone";
 		side = 1;
 		scope = 2;
 		scopeCurator = 2;
@@ -161,6 +180,7 @@ class cfgWeapons
 	class U_B_CombatUniform_mcam_tshirt;
 	class UniformItem;
 	class H_HelmetIA;
+	class optic_Arco;
  
 	class CAF_CADPAT_Uniform : U_B_CombatUniform_mcam
 	{
@@ -229,5 +249,17 @@ class cfgWeapons
 		
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\caf_skins\CADPAT_Helmet1_TW.paa"};
+	};
+	
+	class CAF_CADPAT_C97A3_Sight : optic_Arco
+	{
+		side = 1;
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Elcan C97A3";
+		author = "Anton Struyk";
+		
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\caf_skins\Elcan_C97A3_Sight.paa"};
 	};
 };
