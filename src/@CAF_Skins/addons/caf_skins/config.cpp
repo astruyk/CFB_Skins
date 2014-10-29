@@ -12,14 +12,15 @@ class CfgPatches
 		{
 			"A3_Characters_F_BLUFOR",
 			"A3_Air_F_EPB_Heli_Light_03",
-			"A3_Air_F_Beta_Heli_Transport_02"
+			"A3_Air_F_Beta_Heli_Transport_02",
+			"asdg_jointrails"
 		};
 		
 		weapons[] =
 		{
-			"CAF_CADPAT_Uniform",
-			"CAF_CADPAT_TL_Uniform",
-			"CAF_CADPAT_AR_Uniform",
+			"CAF_CADPAT_TW_Uniform",
+			"CAF_CADPAT_TW_Rolled_Uniform",
+			"CAF_CADPAT_TW_Tshirt_Uniform",
 			"CAF_CADPAT_C97A3_Sight"
 		};
 		
@@ -28,6 +29,9 @@ class CfgPatches
 			"CAF_TW_Soldier",
 			"CAF_TW_Soldier_TL",
 			"CAF_TW_Soldier_AR",
+			"CAF_TW_Soldier_Marksman",
+			"CAF_RCAF_Helo_Pilot",
+			"CAF_RCAF_Helo_Crew",
 			"CAF_Helo_Griffon",
 			"CAF_Helo_Griffon_Unarmed",
 			"CAF_Helo_Cyclone"
@@ -74,9 +78,6 @@ class CfgVehicleClasses
 class CfgVehicles
 {
 	class B_Soldier_F;
-	class B_Soldier_TL_F;
-	class B_soldier_AR_F;
-	
 	class CAF_TW_Soldier : B_Soldier_F
 	{
 		_generalMacro  = "CAF_TW_Soldier";
@@ -85,14 +86,16 @@ class CfgVehicles
 		faction = "CAF_Base_Faction";
 		vehicleClass = "CAF_CADPAT_TW_VehicleClass";
 		displayName = "Rifleman";
-		nakedUniform = "U_BasicBody"; //class for "naked" body
-		uniformClass = "CAF_CADPAT_Uniform"; //the uniform item
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CAF_CADPAT_TW_Uniform";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = { "\caf_skins\CADPAT_Uniform1_TW.paa" };
 		
-		linkedItems[] = {"V_TacVest_oli","CAF_CADPAT_TW_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
+		linkedItems[] = { "CAF_Vest_Tactical_TW", "CAF_CADPAT_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
+		weapons[] = { "arifle_MX_Black_F", "Throw", "Put" };
 	};
 	
+	class B_Soldier_TL_F;
 	class CAF_TW_Soldier_TL : B_Soldier_TL_F
 	{
 		_generalMacro  = "CAF_TW_Soldier_TL";
@@ -102,15 +105,16 @@ class CfgVehicles
 		vehicleClass = "CAF_CADPAT_TW_VehicleClass";
 		displayName = "Section Leader";
 		icon="iconManLeader";
-		nakedUniform = "U_BasicBody"; //class for "naked" body
-		uniformClass = "CAF_CADPAT_TL_Uniform"; //the uniform item
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CAF_CADPAT_TW_Rolled_Uniform";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = { "\caf_skins\CADPAT_Uniform1_TW.paa" };
 		
-		linkedItems[] = {"V_TacVest_oli","CAF_CADPAT_TW_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
+		linkedItems[] = {"CAF_Vest_Tactical_TW","CAF_CADPAT_TW_Patrol","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
 		weapons[] = {"arifle_MX_GL_Black_F", "Throw", "Put"};
 	};
 	
+	class B_soldier_AR_F;
 	class CAF_TW_Soldier_AR : B_soldier_AR_F
 	{
 		_generalMacro  = "CAF_TW_Soldier_AR";
@@ -119,13 +123,30 @@ class CfgVehicles
 		faction = "CAF_Base_Faction";
 		vehicleClass = "CAF_CADPAT_TW_VehicleClass";
 		displayName = "Automatic Rifleman";
-		//icon="iconManLeader";
-		nakedUniform = "U_BasicBody"; //class for "naked" body
-		uniformClass = "CAF_CADPAT_AR_Uniform"; //the uniform item
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CAF_CADPAT_TW_Tshirt_Uniform";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = { "\caf_skins\CADPAT_Uniform1_TW.paa" };
 		
-		linkedItems[] = {"V_Chestrig_oli","CAF_CADPAT_TW_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
+		linkedItems[] = {"CAF_Vest_Tactical_TW", "CAF_CADPAT_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
+		weapons[] = { "arifle_MX_SW_Black_F", "Throw", "Put" };
+	};
+	
+	class B_soldier_M_F;
+	class CAF_TW_Soldier_Marksman : B_soldier_M_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		faction = "CAF_Base_Faction";
+		vehicleClass = "CAF_CADPAT_TW_VehicleClass";
+		displayName = "Automatic Rifleman";
+		nakedUniform = "U_BasicBody";
+		uniformClass = "CAF_CADPAT_TW_Rolled_Uniform";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = { "\caf_skins\CADPAT_Uniform1_TW.paa" };
+		
+		linkedItems[] = { "CAF_Vest_Tactical_TW", "CAF_CADPAT_TW_Boonie", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
+		weapons[] = { "arifle_MXM_Black_F", "Throw", "Put" };
 	};
 	
 	// Air Force
@@ -137,6 +158,8 @@ class CfgVehicles
 		faction = "CAF_Base_Faction";
 		vehicleClass = "CAF_RCAF_VehicleClass";
 		displayName = "Helicopter Pilot";
+		
+		uniformClass = "U_I_pilotCoveralls";
 	};
 	
 	class CAF_RCAF_Helo_Crew : B_helicrew_F
@@ -146,6 +169,8 @@ class CfgVehicles
 		faction = "CAF_Base_Faction";
 		vehicleClass = "CAF_RCAF_VehicleClass";
 		displayName = "Helicopter Crew";
+		
+		uniformClass = "U_I_pilotCoveralls";
 	};
 
 	class I_Heli_light_03_F;
@@ -196,7 +221,7 @@ class cfgWeapons
 	class UniformItem;
  
 	class U_B_CombatUniform_mcam;
-	class CAF_CADPAT_Uniform : U_B_CombatUniform_mcam
+	class CAF_CADPAT_TW_Uniform : U_B_CombatUniform_mcam
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -216,7 +241,7 @@ class cfgWeapons
 	};
 	
 	class U_B_CombatUniform_mcam_vest;
-	class CAF_CADPAT_TL_Uniform : U_B_CombatUniform_mcam_vest
+	class CAF_CADPAT_TW_Rolled_Uniform : U_B_CombatUniform_mcam_vest
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -235,7 +260,7 @@ class cfgWeapons
 	};
 	
 	class U_B_CombatUniform_mcam_tshirt;
-	class CAF_CADPAT_AR_Uniform : U_B_CombatUniform_mcam_tshirt
+	class CAF_CADPAT_TW_Tshirt_Uniform : U_B_CombatUniform_mcam_tshirt
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -279,6 +304,46 @@ class cfgWeapons
 		hiddenSelectionsTextures[] = {"\caf_skins\CADPAT_Hat_Boonie_TW.paa"};
 	};
 	
+	class H_MilCap_gry;
+	class CAF_CADPAT_TW_Patrol : H_MilCap_gry
+	{
+		side = 1;
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "CADPAT TW Patrol Hat";
+		author = "Anton Struyk";
+		
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\caf_skins\CADPAT_Hat_Patrol_TW.paa"};
+	};
+	
+	class V_TacVest_oli;
+	class CAF_Vest_Tactical_TW : V_TacVest_oli
+	{
+		side = 1;
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "CADPAT TW Tactical Vest";
+		author = "Anton Struyk";
+		
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\caf_skins\CADPAT_Vest_Tactical_TW.paa"};
+	};
+	
+	// TODO doesn't work :(
+	class B_AssaultPack_cbr;
+	class CAF_Backpack_Assault_TW : B_AssaultPack_cbr
+	{
+		side = 1;
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "CADPAT TW Assault Backpack";
+		author = "Anton Struyk";
+		
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\caf_skins\CADPAT_Backpack_Assault_TW.paa"};
+	};
+	
 	// TODO doesn't work :(
 	class optic_Arco;
 	class CAF_CADPAT_C97A3_Sight : optic_Arco
@@ -291,5 +356,15 @@ class cfgWeapons
 		
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\caf_skins\Elcan_C97A3_Sight.paa"};
+	};
+};
+
+// To make ARCO skin work
+class asdg_OpticRail;
+class asdg_OpticRail1913 : asdg_OpticRail
+{
+	class compatibleItems
+	{
+		CAF_CADPAT_C97A3_Sight = 1;
 	};
 };
