@@ -214,6 +214,20 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1", "camo2", "camo3"};
 		hiddenSelectionsTextures[] = { "\caf_skins\CH148_0.paa", "\caf_skins\CH148_1.paa", "\caf_skins\CH148_2.paa"};
 	};
+	
+	// Backpacks
+	class B_AssaultPack_cbr;
+	class CAF_Backpack_Assault_TW : B_AssaultPack_cbr
+	{
+		side = 1;
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "CADPAT TW Assault Backpack";
+		author = "Anton Struyk";
+		
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\caf_skins\CADPAT_Backpack_Assault_TW.paa"};
+	};
 };
  
 class cfgWeapons
@@ -329,21 +343,7 @@ class cfgWeapons
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\caf_skins\CADPAT_Vest_Tactical_TW.paa"};
 	};
-	
-	// TODO doesn't work :(
-	class B_AssaultPack_cbr;
-	class CAF_Backpack_Assault_TW : B_AssaultPack_cbr
-	{
-		side = 1;
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "CADPAT TW Assault Backpack";
-		author = "Anton Struyk";
-		
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\caf_skins\CADPAT_Backpack_Assault_TW.paa"};
-	};
-	
+
 	// TODO doesn't work :(
 	class optic_Arco;
 	class CAF_CADPAT_C97A3_Sight : optic_Arco
