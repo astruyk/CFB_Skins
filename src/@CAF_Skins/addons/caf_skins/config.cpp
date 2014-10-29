@@ -17,20 +17,20 @@ class CfgPatches
 		
 		weapons[] =
 		{
-			CAF_CADPAT_Uniform,
-			CAF_CADPAT_TL_Uniform,
-			CAF_CADPAT_AR_Uniform,
-			CAF_CADPAT_C97A3_Sight
+			"CAF_CADPAT_Uniform",
+			"CAF_CADPAT_TL_Uniform",
+			"CAF_CADPAT_AR_Uniform",
+			"CAF_CADPAT_C97A3_Sight"
 		};
 		
 		units[] =
 		{
-			CAF_TW_Soldier,
-			CAF_TW_Soldier_TL,
-			CAF_TW_Soldier_AR,
-			CAF_Helo_Griffon,
-			CAF_Helo_Griffon_Unarmed,
-			CAF_Helo_Cyclone
+			"CAF_TW_Soldier",
+			"CAF_TW_Soldier_TL",
+			"CAF_TW_Soldier_AR",
+			"CAF_Helo_Griffon",
+			"CAF_Helo_Griffon_Unarmed",
+			"CAF_Helo_Cyclone"
 		};
 	};
 };
@@ -128,11 +128,27 @@ class CfgVehicles
 		linkedItems[] = {"V_Chestrig_oli","CAF_CADPAT_TW_Helmet","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles_INDEP"};
 	};
 	
-	// Helicopters
-	class I_Heli_light_03_unarmed_F;
-	class I_Heli_light_03_F;
-	class I_Heli_Transport_02_F;
+	// Air Force
+	class B_helicrew_F;
+	class CAF_RCAF_Helo_Pilot : B_helicrew_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		faction = "CAF_Base_Faction";
+		vehicleClass = "CAF_RCAF_VehicleClass";
+		displayName = "Helicopter Pilot";
+	};
+	
+	class CAF_RCAF_Helo_Crew : B_helicrew_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		faction = "CAF_Base_Faction";
+		vehicleClass = "CAF_RCAF_VehicleClass";
+		displayName = "Helicopter Crew";
+	};
 
+	class I_Heli_light_03_F;
 	class CAF_Helo_Griffon : I_Heli_light_03_F
 	{
 		_generalMacro  = "CAF_Helo_Griffon";
@@ -146,6 +162,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = { "\caf_skins\CH146_0.paa" };
 	};
 
+	class I_Heli_light_03_unarmed_F;
 	class CAF_Helo_Griffon_Unarmed : I_Heli_light_03_unarmed_F
 	{
 		_generalMacro  = "CAF_Helo_Griffon_Unarmed";
@@ -159,6 +176,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = { "\caf_skins\CH146_0.paa" };
 	};
 
+	class I_Heli_Transport_02_F;
 	class CAF_Helo_Cyclone : I_Heli_Transport_02_F
 	{
 		_generalMacro  = "CAF_Helo_Cyclone";
@@ -175,13 +193,9 @@ class CfgVehicles
  
 class cfgWeapons
 {
-	class U_B_CombatUniform_mcam;
-	class U_B_CombatUniform_mcam_vest;
-	class U_B_CombatUniform_mcam_tshirt;
 	class UniformItem;
-	class H_HelmetIA;
-	class optic_Arco;
  
+	class U_B_CombatUniform_mcam;
 	class CAF_CADPAT_Uniform : U_B_CombatUniform_mcam
 	{
 		scope = 2;
@@ -201,12 +215,13 @@ class cfgWeapons
 		};
 	};
 	
+	class U_B_CombatUniform_mcam_vest;
 	class CAF_CADPAT_TL_Uniform : U_B_CombatUniform_mcam_vest
 	{
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "CADPAD Combat Uniform (Rolled Up)";
-		picture = "\A3\characters_f\data\ui\U_B_CombatUniform_mcam_vest.paa";
+		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		author = "Anton Struyk";
  
@@ -219,12 +234,13 @@ class cfgWeapons
 		};
 	};
 	
-	class CAF_CADPAT_AR_Uniform : U_B_CombatUniform_mcam_vest
+	class U_B_CombatUniform_mcam_tshirt;
+	class CAF_CADPAT_AR_Uniform : U_B_CombatUniform_mcam_tshirt
 	{
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "CADPAD Combat Uniform (Tee)";
-		picture = "\A3\characters_f\data\ui\U_B_CombatUniform_mcam_tshirt.paa";
+		picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
 		model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		author = "Anton Struyk";
  
@@ -237,20 +253,34 @@ class cfgWeapons
 		};
 	};
 	
+	class H_HelmetIA;
 	class CAF_CADPAT_TW_Helmet : H_HelmetIA
 	{
 		side = 1;
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Combat Helmet (CADPAD TW)";
+		displayName = "CADPAT TW Helmet";
 		author = "Anton Struyk";
-		//model = "\A3\Characters_F_Beta\INDEP\headgear_helmet_canvas";
-		//picture = "\A3\characters_F_Beta\Data\UI\icon_H_I_Helmet_canvas_ca.paa";
-		
+
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\caf_skins\CADPAT_Helmet1_TW.paa"};
 	};
 	
+	class H_Booniehat_tan;
+	class CAF_CADPAT_TW_Boonie : H_Booniehat_tan
+	{
+		side = 1;
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "CADPAT TW Boonie Hat";
+		author = "Anton Struyk";
+		
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\caf_skins\CADPAT_Hat_Boonie_TW.paa"};
+	};
+	
+	// TODO doesn't work :(
+	class optic_Arco;
 	class CAF_CADPAT_C97A3_Sight : optic_Arco
 	{
 		side = 1;
