@@ -60,7 +60,7 @@ class CFB_TW_Soldier_Marksman : B_soldier_M_F
 	scopeCurator = 2;
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
-	displayName = "Automatic Rifleman";
+	displayName = "Marksman";
 	nakedUniform = "U_BasicBody";
 	uniformClass = "CFB_CADPAT_TW_Rolled_Uniform";
 	hiddenSelections[] = {"Camo"};

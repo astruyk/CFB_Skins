@@ -14,9 +14,9 @@ class CFB_CADPAT_TW_Uniform : U_B_CombatUniform_mcam
 	class ItemInfo : UniformItem
 	{
 		uniformModel = "-";
-		uniformClass = "CFB_TW_Soldier"; //would be same as our made soldier class
-		containerClass = "Supply40"; //how much it can carry
-		mass = 80; //how much it weights
+		uniformClass = "CFB_TW_Soldier";
+		containerClass = "Supply40";
+		mass = 80;
 	};
 };
 
@@ -33,9 +33,9 @@ class CFB_CADPAT_TW_Rolled_Uniform : U_B_CombatUniform_mcam_vest
 	class ItemInfo : UniformItem
 	{
 		uniformModel = "-";
-		uniformClass = "CFB_TW_Soldier_TL"; //would be same as our made soldier class
-		containerClass = "Supply40"; //how much it can carry
-		mass = 80; //how much it weights
+		uniformClass = "CFB_TW_Soldier_TL";
+		containerClass = "Supply40";
+		mass = 80;
 	};
 };
 
@@ -52,8 +52,8 @@ class CFB_CADPAT_TW_Tshirt_Uniform : U_B_CombatUniform_mcam_tshirt
 	class ItemInfo : UniformItem
 	{
 		uniformModel = "-";
-		uniformClass = "CFB_TW_Soldier_AR"; //would be same as our made soldier class
-		containerClass = "Supply40"; //how much it can carry
-		mass = 80; //how much it weights
+		uniformClass = "CFB_TW_Soldier_AR";
+		containerClass = "Supply40";
+		mass = 80;
 	};
 };
