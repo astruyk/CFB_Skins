@@ -10,10 +10,14 @@ class CfgPatches
 		versionAr[] = {0,0,0};
 		requiredAddons[] =
 		{
-			"A3_Characters_F_BLUFOR",
-			"A3_Air_F_EPB_Heli_Light_03",
-			"A3_Air_F_Beta_Heli_Transport_02",
-			"asdg_jointrails"
+			"A3_Characters_F_BLUFOR", // For units
+			"A3_Air_F_EPB_Heli_Light_03", // Hellcats
+			"A3_Air_F_Beta_Heli_Transport_02", // Mohawk
+			"A3_Weapons_F_Ammoboxes", // For backpacks
+			"A3_Weapons_F_Headgear", // For helmets & hats
+			"A3_Weapons_F_Acc", // For weapon sights
+			"A3_Weapons_F_NATO", // For rifles
+			//"asdg_jointrails" // For weapon sight compatability
 		};
 		
 		weapons[] =
@@ -89,7 +93,7 @@ class cfgWeapons
 	#include "weapons_vests_tw.hpp"
 	#include "weapons_sights.hpp"
 };
-
+/*
 // To make ARCO skin work
 class asdg_OpticRail;
 class asdg_OpticRail1913 : asdg_OpticRail
@@ -99,3 +103,4 @@ class asdg_OpticRail1913 : asdg_OpticRail
 		CFB_CADPAT_C97A3_Sight = 1;
 	};
 };
+*/
