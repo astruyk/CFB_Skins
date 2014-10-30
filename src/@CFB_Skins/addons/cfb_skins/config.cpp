@@ -79,7 +79,7 @@ class CfgVehicles
 {
 	#include "vehicles_units_tw.hpp"
 	#include "vehicles_units_rcaf.hpp"
-	#include "vehicles_bacpacks_tw.hpp"
+	#include "vehicles_backpacks_tw.hpp"
 };
  
 class cfgWeapons
