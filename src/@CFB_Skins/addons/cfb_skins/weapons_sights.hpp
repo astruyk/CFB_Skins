@@ -12,8 +12,7 @@ class CFB_C97A3_Sight : optic_Arco
 	hiddenSelectionsTextures[] = {"\cfb_skins\Elcan_C97A3_Sight.paa"};
 };
 
-// Test make the normal rifle compatible with our new sight.
-
+// Make the normal MX rifles compatible with our new sight.
 class arifle_MX_Base_F;
 class WeaponSlotsInfo;
 class CowsSlot;
