@@ -1,4 +1,3 @@
-A3_CAF_Skins
-============
+Canadian Forces Base Skins  - @CFB_Skins
 
-Canadian skins for ARMA 3 vehicles. Inspired by real textures.
+Skins for the base ARMA assets inspired by real Canadian units.
