@@ -365,6 +365,6 @@ class asdg_OpticRail1913 : asdg_OpticRail
 {
 	class compatibleItems
 	{
-		CAF_CADPAT_C97A3_Sight = 1;
+		CFB_CADPAT_C97A3_Sight = 1;
 	};
 };
