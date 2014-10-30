@@ -17,7 +17,6 @@ class CfgPatches
 			"A3_Weapons_F_Headgear", // For helmets & hats
 			"A3_Weapons_F_Acc", // For weapon sights
 			"A3_Weapons_F_NATO", // For rifles
-			//"asdg_jointrails" // For weapon sight compatability
 		};
 		
 		weapons[] =
@@ -93,14 +92,3 @@ class cfgWeapons
 	#include "weapons_vests_tw.hpp"
 	#include "weapons_sights.hpp"
 };
-/*
-// To make ARCO skin work
-class asdg_OpticRail;
-class asdg_OpticRail1913 : asdg_OpticRail
-{
-	class compatibleItems
-	{
-		CFB_CADPAT_C97A3_Sight = 1;
-	};
-};
-*/
