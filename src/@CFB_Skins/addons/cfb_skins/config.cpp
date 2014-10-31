@@ -87,6 +87,10 @@ class CfgVehicles
  
 class cfgWeapons
 {
+	// Forward declarations for multiple files.
+	class UniformItem;
+	class ItemInfo;
+
 	#include "weapons_uniforms_tw.hpp"
 	#include "weapons_uniforms_rcaf.hpp"
 	#include "weapons_headgear_tw.hpp"

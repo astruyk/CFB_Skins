@@ -1,5 +1,3 @@
-class UniformItem;
- 
 class U_B_CombatUniform_mcam;
 class CFB_CADPAT_TW_Uniform : U_B_CombatUniform_mcam
 {
