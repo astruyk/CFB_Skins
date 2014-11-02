@@ -32,7 +32,10 @@ class CfgPatches
 			"CFB_TW_Soldier",
 			"CFB_TW_Soldier_TL",
 			"CFB_TW_Soldier_AR",
+			"CFB_TW_Soldier_MMG",
 			"CFB_TW_Soldier_Marksman",
+			"CFB_TW_Soldier_GL",
+			"CFB_TW_Soldier_Medic",
 			"CFB_RCAF_Helo_Pilot",
 			"CFB_RCAF_Helo_Crew",
 			"CFB_Helo_Griffon",
@@ -98,4 +101,16 @@ class cfgWeapons
 	//#include "weapons_optics.hpp"
 };
 
-#include "cfgGroups.hpp"
+class CfgGroups
+{
+	class West
+	{
+		side = 1;
+		class CFB_Groups
+		{
+			name = "Canadian Armed Forces";
+			
+			#include "cfgGroups.hpp"
+		};
+	};
+};
