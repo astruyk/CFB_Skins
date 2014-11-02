@@ -97,3 +97,5 @@ class cfgWeapons
 	#include "weapons_vests_tw.hpp"
 	//#include "weapons_optics.hpp"
 };
+
+#include "cfgGroups.hpp"
