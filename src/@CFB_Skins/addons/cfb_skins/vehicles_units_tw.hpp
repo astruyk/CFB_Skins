@@ -3,7 +3,6 @@ class CFB_TW_Soldier : B_Soldier_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	//_generalMacro  = "CFB_TW_Soldier";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
 	displayName = "Rifleman";
@@ -22,7 +21,6 @@ class CFB_TW_Soldier_TL : B_Soldier_TL_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	//_generalMacro  = "CFB_TW_Soldier_TL";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
 	displayName = "Section Leader";
@@ -42,7 +40,6 @@ class CFB_TW_Soldier_AR : B_soldier_AR_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	_generalMacro  = "CFB_TW_Soldier_AR";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
 	displayName = "Autorifleman";
@@ -67,7 +64,6 @@ class CFB_TW_Soldier_Marksman : B_soldier_M_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	_generalMacro  = "CFB_TW_Soldier_Marksman";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
 	displayName = "Marksman";
@@ -86,7 +82,6 @@ class CFB_TW_Soldier_GL : B_Soldier_GL_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	_generalMacro  = "CFB_TW_Soldier_GL";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
 	displayName = "Grenadier";
@@ -105,7 +100,6 @@ class CFB_TW_Soldier_Medic : B_medic_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	_generalMacro  = "CFB_TW_Soldier_Medic";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
 	displayName = "Combat Medic";
@@ -124,7 +118,6 @@ class CFB_TW_Soldier_LAT : B_soldier_LAT_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	_generalMacro  = "B_soldier_LAT_F";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
 	displayName = "Rifleman (AT)";
@@ -143,7 +136,6 @@ class CFB_TW_Soldier_AmmoBearer : B_Soldier_A_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	_generalMacro  = "CFB_TW_Soldier_AmmoBearer";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
 	displayName = "Ammo Bearer (Rifle)";
@@ -186,7 +178,6 @@ class CFB_TW_Soldier_AT : B_soldier_AT_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	_generalMacro  = "CFB_TW_Soldier_AT";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
 	displayName = "Missile Specialist (AT)";
@@ -205,7 +196,6 @@ class CFB_TW_Soldier_AA : B_soldier_AA_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	_generalMacro  = "CFB_TW_Soldier_AA";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
 	displayName = "Missile Specialist (AA)";
@@ -224,7 +214,6 @@ class CFB_TW_Soldier_Engineer : B_engineer_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	_generalMacro  = "CFB_TW_Soldier_Engineer";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
 	displayName = "Engineer";
