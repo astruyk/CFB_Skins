@@ -7,7 +7,7 @@ Check out the project at: https://github.com/astruyk/CFB_Skins for more informat
 Changelog
 
 1.0.1
-* Signed adding with unique key (not debug key)
+* Signed addon with unique key (not debug key)
 
 1.0.0
 * Added CADPAT Temperate Woodland skinned equipment:
