@@ -23,8 +23,8 @@ class CfgPatches
 		{
 			"CFB_CADPAT_TW_Uniform",
 			"CFB_CADPAT_TW_Rolled_Uniform",
-			"CFB_CADPAT_TW_Tshirt_Uniform",
-			"CFB_CADPAT_C97A3_Sight"
+			"CFB_CADPAT_TW_Tshirt_Uniform"
+			//"CFB_CADPAT_C97A3_Sight"
 		};
 		
 		units[] =
@@ -36,6 +36,15 @@ class CfgPatches
 			"CFB_TW_Soldier_Marksman",
 			"CFB_TW_Soldier_GL",
 			"CFB_TW_Soldier_Medic",
+			"CFB_TW_Soldier_LAT",
+			"CFB_TW_Soldier_AmmoBearer",
+			"CFB_TW_Soldier_AmmoBearer_AT",
+			"CFB_TW_Soldier_AmmoBearer_AA",
+			"CFB_TW_Soldier_AmmoBearer_AR",
+			"CFB_TW_Soldier_AmmoBearer_MMG",
+			"CFB_TW_Soldier_AT",
+			"CFB_TW_Soldier_AA",
+			"CFB_TW_Soldier_Engineer",
 			"CFB_RCAF_Helo_Pilot",
 			"CFB_RCAF_Helo_Crew",
 			"CFB_Helo_Griffon",

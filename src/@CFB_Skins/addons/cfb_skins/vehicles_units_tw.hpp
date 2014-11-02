@@ -3,7 +3,7 @@ class CFB_TW_Soldier : B_Soldier_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	_generalMacro  = "CFB_TW_Soldier";
+	//_generalMacro  = "CFB_TW_Soldier";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
 	displayName = "Rifleman";
@@ -22,7 +22,7 @@ class CFB_TW_Soldier_TL : B_Soldier_TL_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	_generalMacro  = "CFB_TW_Soldier_TL";
+	//_generalMacro  = "CFB_TW_Soldier_TL";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
 	displayName = "Section Leader";
@@ -45,7 +45,7 @@ class CFB_TW_Soldier_AR : B_soldier_AR_F
 	_generalMacro  = "CFB_TW_Soldier_AR";
 	faction = "CFB_Base_Faction";
 	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
-	displayName = "Automatic Rifleman";
+	displayName = "Autorifleman";
 	nakedUniform = "U_BasicBody";
 	uniformClass = "CFB_CADPAT_TW_Tshirt_Uniform";
 	backpack = "CFB_Backpack_Kitbag_TW";
@@ -55,21 +55,9 @@ class CFB_TW_Soldier_AR : B_soldier_AR_F
 	linkedItems[] = {"CFB_Vest_PlateCarrier1_TW", "CFB_CADPAT_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
 	weapons[] = { "LMG_Mk200_F", "Throw", "Put" };
 };
-
-class CFB_TW_Soldier_MMG : B_soldier_AR_F
+class CFB_TW_Soldier_MMG : CFB_TW_Soldier_AR
 {
-	scope = 2;
-	scopeCurator = 2;
-	faction = "CFB_Base_Faction";
-	_generalMacro  = "CFB_TW_Soldier_MMG";
-	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
-	displayName = "Automatic Rifleman (MMG)";
-	nakedUniform = "U_BasicBody";
-	uniformClass = "CFB_CADPAT_TW_Rolled_Uniform";
-	backpack = "CFB_Backpack_Kitbag_TW";
-	hiddenSelections[] = { "Camo" };
-	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_Uniform1_TW.paa" };
-	
+	displayName = "Autorifleman (MMG)";
 	linkedItems[] = {"CFB_Vest_PlateCarrier1_TW", "CFB_CADPAT_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
 	weapons[] = { "LMG_Zafir_F", "Throw", "Put" };
 };
@@ -131,12 +119,123 @@ class CFB_TW_Soldier_Medic : B_medic_F
 	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
 };
 
-/*
-class B_soldier_LAT_F; //Light AT
-class B_Soldier_A_F; // Ammo bearer
-class B_soldier_AT_F; // Heavy AT
-class B_soldier_AA_F; // AAA
-class B_engineer_F; // Engineer
-// MMG
-*/
+class B_soldier_LAT_F;
+class CFB_TW_Soldier_LAT : B_soldier_LAT_F
+{
+	scope = 2;
+	scopeCurator = 2;
+	_generalMacro  = "B_soldier_LAT_F";
+	faction = "CFB_Base_Faction";
+	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
+	displayName = "Rifleman (AT)";
+	nakedUniform = "U_BasicBody";
+	uniformClass = "CFB_CADPAT_TW_Tshirt_Uniform";
+	backpack = "CFB_Backpack_Kitbag_TW";
+	hiddenSelections[] = { "Camo" };
+	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_Uniform1_TW.paa" };
+	
+	linkedItems[] = { "CFB_Vest_PlateCarrier1_TW", "CFB_CADPAT_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
+	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+};
+
+class B_Soldier_A_F;
+class CFB_TW_Soldier_AmmoBearer : B_Soldier_A_F
+{
+	scope = 2;
+	scopeCurator = 2;
+	_generalMacro  = "CFB_TW_Soldier_AmmoBearer";
+	faction = "CFB_Base_Faction";
+	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
+	displayName = "Ammo Bearer (Rifle)";
+	nakedUniform = "U_BasicBody";
+	uniformClass = "CFB_CADPAT_TW_Tshirt_Uniform";
+	backpack = "CFB_Backpack_Kitbag_TW";
+	hiddenSelections[] = { "Camo" };
+	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_Uniform1_TW.paa" };
+	
+	linkedItems[] = { "CFB_Vest_PlateCarrier1_TW", "CFB_CADPAT_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
+	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+};
+class CFB_TW_Soldier_AmmoBearer_AT : CFB_TW_Soldier_AmmoBearer
+{
+	displayName = "Ammo Bearer (AT)";
+	linkedItems[] = { "CFB_Vest_PlateCarrier1_TW", "CFB_CADPAT_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
+	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+};
+class CFB_TW_Soldier_AmmoBearer_AA : CFB_TW_Soldier_AmmoBearer
+{
+	displayName = "Ammo Bearer (AA)";
+	linkedItems[] = { "CFB_Vest_PlateCarrier1_TW", "CFB_CADPAT_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
+	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+};
+class CFB_TW_Soldier_AmmoBearer_AR : CFB_TW_Soldier_AmmoBearer
+{
+	displayName = "Ammo Bearer (AR)";
+	linkedItems[] = { "CFB_Vest_PlateCarrier1_TW", "CFB_CADPAT_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
+	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+};
+class CFB_TW_Soldier_AmmoBearer_MMG : CFB_TW_Soldier_AmmoBearer
+{
+	displayName = "Ammo Bearer (MMG)";
+	linkedItems[] = { "CFB_Vest_PlateCarrier1_TW", "CFB_CADPAT_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
+	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+};
+
+class B_soldier_AT_F;
+class CFB_TW_Soldier_AT : B_soldier_AT_F
+{
+	scope = 2;
+	scopeCurator = 2;
+	_generalMacro  = "CFB_TW_Soldier_AT";
+	faction = "CFB_Base_Faction";
+	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
+	displayName = "Missile Specialist (AT)";
+	nakedUniform = "U_BasicBody";
+	uniformClass = "CFB_CADPAT_TW_Tshirt_Uniform";
+	backpack = "CFB_Backpack_Kitbag_TW";
+	hiddenSelections[] = { "Camo" };
+	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_Uniform1_TW.paa" };
+	
+	linkedItems[] = { "CFB_Vest_PlateCarrier1_TW", "CFB_CADPAT_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
+	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+};
+
+class B_soldier_AA_F;
+class CFB_TW_Soldier_AA : B_soldier_AA_F
+{
+	scope = 2;
+	scopeCurator = 2;
+	_generalMacro  = "CFB_TW_Soldier_AA";
+	faction = "CFB_Base_Faction";
+	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
+	displayName = "Missile Specialist (AA)";
+	nakedUniform = "U_BasicBody";
+	uniformClass = "CFB_CADPAT_TW_Tshirt_Uniform";
+	backpack = "CFB_Backpack_Kitbag_TW";
+	hiddenSelections[] = { "Camo" };
+	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_Uniform1_TW.paa" };
+	
+	linkedItems[] = { "CFB_Vest_PlateCarrier1_TW", "CFB_CADPAT_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
+	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+};
+
+class B_engineer_F;
+class CFB_TW_Soldier_Engineer : B_engineer_F
+{
+	scope = 2;
+	scopeCurator = 2;
+	_generalMacro  = "CFB_TW_Soldier_Engineer";
+	faction = "CFB_Base_Faction";
+	vehicleClass = "CFB_CADPAT_TW_VehicleClass";
+	displayName = "Engineer";
+	nakedUniform = "U_BasicBody";
+	uniformClass = "CFB_CADPAT_TW_Tshirt_Uniform";
+	backpack = "CFB_Backpack_Kitbag_TW";
+	hiddenSelections[] = { "Camo" };
+	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_Uniform1_TW.paa" };
+	
+	linkedItems[] = { "CFB_Vest_Tactical_TW", "CFB_CADPAT_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
+	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+};
+
 
