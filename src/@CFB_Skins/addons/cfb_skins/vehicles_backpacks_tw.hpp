@@ -1,5 +1,5 @@
 class B_AssaultPack_cbr;
-class CFB_Backpack_Assault_TW : B_AssaultPack_cbr
+class CFB_TW_Backpack_Assault : B_AssaultPack_cbr
 {
 	side = 1;
 	scope = 2;
@@ -8,11 +8,11 @@ class CFB_Backpack_Assault_TW : B_AssaultPack_cbr
 	author = "Anton Struyk";
 	
 	hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_Backpack_Assault_TW.paa"};
+	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_TW_Backpack_Assault.paa"};
 };
 
 class B_Kitbag_cbr;
-class CFB_Backpack_Kitbag_TW : B_Kitbag_cbr
+class CFB_TW_Backpack_Kitbag : B_Kitbag_cbr
 {
 	side = 1;
 	scope = 2;
@@ -21,5 +21,5 @@ class CFB_Backpack_Kitbag_TW : B_Kitbag_cbr
 	author = "Anton Struyk";
 	
 	hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_Backpack_Fast_TW.paa"};
+	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_TW_Backpack_Fast.paa"};
 };

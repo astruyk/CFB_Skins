@@ -21,9 +21,9 @@ class CfgPatches
 		
 		weapons[] =
 		{
-			"CFB_CADPAT_TW_Uniform",
-			"CFB_CADPAT_TW_Rolled_Uniform",
-			"CFB_CADPAT_TW_Tshirt_Uniform"
+			"CFB_TW_Uniform",
+			"CFB_TW_Rolled_Uniform",
+			"CFB_TW_Tshirt_Uniform"
 			//"CFB_CADPAT_C97A3_Sight"
 		};
 		
@@ -69,31 +69,18 @@ class CfgFactionClasses
 
 class CfgVehicleClasses
 {
-	class CFB_CADPAT_TW_VehicleClass
-	{
-		displayName = "CADPAT TW";
-	};
-	
-	class CFB_CADPAT_AR_VehicleClass
-	{
-		displayName = "CADPAT AR";
-	};
-	
-	class CFB_CADPAT_Arctic_VehicleClass
-	{
-		displayName = "CADPAT Arctic";
-	};
-	
-	class CFB_RCAF_VehicleClass
-	{
-		displayName = "RCAF";
-	};
+	class CFB_TW_VehicleClass { displayName = "CADPAT TW"; };
+	//class CFB_CADPAT_AR_VehicleClass { displayName = "CADPAT AR"; };
+	//class CFB_CADPAT_Arctic_VehicleClass { displayName = "CADPAT Arctic"; };
+	class CFB_RCAF_VehicleClass { displayName = "RCAF"; };
+	class CFB_JTF2_VehicleClass { displayName = "JTF2"; }
 };
 
 class CfgVehicles
 {
 	#include "vehicles_units_tw.hpp"
 	#include "vehicles_units_rcaf.hpp"
+	#include "vehicles_units_jtf2.hpp"
 	#include "vehicles_backpacks_tw.hpp"
 };
  
@@ -105,6 +92,7 @@ class cfgWeapons
 
 	#include "weapons_uniforms_tw.hpp"
 	#include "weapons_uniforms_rcaf.hpp"
+	#include "weapons_uniforms_jtf2.hpp"
 	#include "weapons_headgear_tw.hpp"
 	#include "weapons_vests_tw.hpp"
 	//#include "weapons_optics.hpp"
