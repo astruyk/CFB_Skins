@@ -94,6 +94,7 @@ class cfgWeapons
 	#include "weapons_uniforms_rcaf.hpp"
 	#include "weapons_uniforms_jtf2.hpp"
 	#include "weapons_headgear_tw.hpp"
+	#include "weapons_headgear_jtf2.hpp"
 	#include "weapons_vests_tw.hpp"
 	//#include "weapons_optics.hpp"
 };
