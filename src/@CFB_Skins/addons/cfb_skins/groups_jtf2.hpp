@@ -10,7 +10,7 @@ class CFB_Groups_JTF2
 		class Unit0 { side = 1; vehicle = "CFB_JTF2_Soldier_TL"; rank = "SERGEANT"; position[] = {0,0,0}; };
 		class Unit1 { side = 1; vehicle = "CFB_JTF2_Soldier_GL"; rank = "PRIVATE"; position[] = {5,-5,0}; };
 		class Unit2 { side = 1; vehicle = "CFB_JTF2_Soldier_AR"; rank = "PRIVATE"; position[] = {-5,-5,0}; };
-		class Unit3 { side = 1; vehicle = "CFB_JTF2_Soldier"; rank = "PRIVATE"; position[] = {10,-10,0}; };
+		class Unit3 { side = 1; vehicle = "CFB_JTF2_Soldier_LAT"; rank = "PRIVATE"; position[] = {10,-10,0}; };
 		
 		class Unit4 { side = 1; vehicle = "CFB_JTF2_Soldier_TL"; rank = "CORPORAL"; position[] = {-10,-10,0}; };
 		class Unit5 { side = 1; vehicle = "CFB_JTF2_Soldier_Medic"; rank = "PRIVATE"; position[] = {15,-15,0}; };
@@ -21,35 +21,25 @@ class CFB_Groups_JTF2
 	class CFB_Groups_JTF2_Rifle_Assault_Team
 	{
 		faction = "CFB_Base_Faction";
-		name = "Rifle Assault Group";
+		name = "Assault Group 1";
 		side = 1;
 
 		class Unit0 { side = 1; vehicle = "CFB_JTF2_Soldier_TL"; rank = "SERGEANT"; position[] = {0,0,0}; };
 		class Unit1 { side = 1; vehicle = "CFB_JTF2_Soldier_GL"; rank = "PRIVATE"; position[] = {5,-5,0}; };
 		class Unit2 { side = 1; vehicle = "CFB_JTF2_Soldier_AR"; rank = "PRIVATE"; position[] = {-5,-5,0}; };
-		class Unit3 { side = 1; vehicle = "CFB_JTF2_Soldier"; rank = "PRIVATE"; position[] = {10,-10,0}; };
+		class Unit3 { side = 1; vehicle = "CFB_JTF2_Soldier_LAT"; rank = "PRIVATE"; position[] = {10,-10,0}; };
 	};
 	
 	class CFB_Groups_JTF2_Support_Assault_Team
 	{
 		faction = "CFB_Base_Faction";
-		name = "Support Assault Group";
+		name = "Assault Group 2 (Support)";
 		side = 1;
 
 		class Unit0 { side = 1; vehicle = "CFB_JTF2_Soldier_TL"; rank = "SERGEANT"; position[] = {0,0,0}; };
 		class Unit1 { side = 1; vehicle = "CFB_JTF2_Soldier_Medic"; rank = "PRIVATE"; position[] = {5,-5,0}; };
 		class Unit2 { side = 1; vehicle = "CFB_JTF2_Soldier_AR"; rank = "PRIVATE"; position[] = {-5,-5,0}; };
 		class Unit3 { side = 1; vehicle = "CFB_JTF2_Soldier_Marksman"; rank = "PRIVATE"; position[] = {10,-10,0}; };
-	};
-	
-	class CFB_Groups_JTF2_Marksman_Team
-	{
-		faction = "CFB_Base_Faction";
-		name = "Marksman Team";
-		side = 1;
-
-		class Unit0 { side = 1; vehicle = "CFB_JTF2_Soldier_TL"; rank = "CORPORAL"; position[] = {0,0,0}; };
-		class Unit1 { side = 1; vehicle = "CFB_JTF2_Soldier_Marksman"; rank = "PRIVATE"; position[] = {5,-5,0}; };
 	};
 	
 	class CFB_Groups_JTF2_MMG_Team
@@ -70,7 +60,7 @@ class CFB_Groups_JTF2
 		side = 1;
 		
 		class Unit0 { side = 1; vehicle = "CFB_JTF2_Soldier_AT"; rank = "CORPORAL"; position[] = {0,0,0}; };
-		class Unit1 { side = 1; vehicle = "CFB_JTF2_Soldier_AmmoBearer_AT"; rank = "PRIVATE"; position[] = {5,-5,0}; };
+		class Unit1 { side = 1; vehicle = "CFB_JTF2_Soldier_AT"; rank = "PRIVATE"; position[] = {5,-5,0}; };
 		class Unit2 { side = 1; vehicle = "CFB_JTF2_Soldier_AmmoBearer_AT"; rank = "PRIVATE"; position[] = {-5,-5,0}; };
 	};
 	
@@ -81,7 +71,7 @@ class CFB_Groups_JTF2
 		side = 1;
 		
 		class Unit0 { side = 1; vehicle = "CFB_JTF2_Soldier_AA"; rank = "CORPORAL"; position[] = {0,0,0}; };
-		class Unit1 { side = 1; vehicle = "CFB_JTF2_Soldier_AmmoBearer_AA"; rank = "PRIVATE"; position[] = {5,-5,0}; };
+		class Unit1 { side = 1; vehicle = "CFB_JTF2_Soldier_AA"; rank = "PRIVATE"; position[] = {5,-5,0}; };
 		class Unit2 { side = 1; vehicle = "CFB_JTF2_Soldier_AmmoBearer_AA"; rank = "PRIVATE"; position[] = {-5,-5,0}; };
 	};
 	
@@ -104,5 +94,15 @@ class CFB_Groups_JTF2
 		
 		class Unit0 { side = 1; vehicle = "CFB_JTF2_Soldier"; rank = "CORPORAL"; position[] = {0,0,0}; };
 		class Unit1 { side = 1; vehicle = "CFB_JTF2_Soldier_GL"; rank = "PRIVATE"; position[] = {5,-5,0}; };
+	};
+	
+	class CFB_Groups_JTF2_Marksman_Team
+	{
+		faction = "CFB_Base_Faction";
+		name = "Marksman Team";
+		side = 1;
+
+		class Unit0 { side = 1; vehicle = "CFB_JTF2_Soldier_TL"; rank = "CORPORAL"; position[] = {0,0,0}; };
+		class Unit1 { side = 1; vehicle = "CFB_JTF2_Soldier_Marksman"; rank = "PRIVATE"; position[] = {5,-5,0}; };
 	};
 };
