@@ -23,7 +23,10 @@ class CfgPatches
 		{
 			"CFB_TW_Uniform",
 			"CFB_TW_Rolled_Uniform",
-			"CFB_TW_Tshirt_Uniform"
+			"CFB_TW_Tshirt_Uniform",
+			"CFB_JTF2_Uniform",
+			"CFB_JTF2_Rolled_Uniform",
+			"CFB_JTF2_Tshirt_Uniform"
 			//"CFB_CADPAT_C97A3_Sight"
 		};
 		
@@ -45,6 +48,22 @@ class CfgPatches
 			"CFB_TW_Soldier_AT",
 			"CFB_TW_Soldier_AA",
 			"CFB_TW_Soldier_Engineer",
+			"CFB_JTF2_Soldier",
+			"CFB_JTF2_Soldier_TL",
+			"CFB_JTF2_Soldier_AR",
+			"CFB_JTF2_Soldier_MMG",
+			"CFB_JTF2_Soldier_Marksman",
+			"CFB_JTF2_Soldier_GL",
+			"CFB_JTF2_Soldier_Medic",
+			"CFB_JTF2_Soldier_LAT",
+			"CFB_JTF2_Soldier_AmmoBearer",
+			"CFB_JTF2_Soldier_AmmoBearer_AT",
+			"CFB_JTF2_Soldier_AmmoBearer_AA",
+			"CFB_JTF2_Soldier_AmmoBearer_AR",
+			"CFB_JTF2_Soldier_AmmoBearer_MMG",
+			"CFB_JTF2_Soldier_AT",
+			"CFB_JTF2_Soldier_AA",
+			"CFB_JTF2_Soldier_Engineer",
 			"CFB_RCAF_Helo_Pilot",
 			"CFB_RCAF_Helo_Crew",
 			"CFB_Helo_Griffon",
@@ -108,7 +127,8 @@ class CfgGroups
 		{
 			name = "Canadian Armed Forces";
 			
-			#include "cfgGroups.hpp"
+			#include "groups_tw.hpp"
+			#include "groups_jtf2.hpp"
 		};
 	};
 };

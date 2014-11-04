@@ -14,6 +14,7 @@ class CFB_TW_Soldier : B_Soldier_F
 
 	linkedItems[] = { "CFB_TW_Vest_PlateCarrier2", "CFB_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
 	weapons[] = { "arifle_MX_Black_F", "Throw", "Put" };
+	respawnWeapons[] = { "arifle_MX_Black_F", "Throw", "Put" };
 };
 
 class B_Soldier_TL_F;
@@ -33,6 +34,7 @@ class CFB_TW_Soldier_TL : B_Soldier_TL_F
 	
 	linkedItems[] = { "CFB_TW_Vest_PlateCarrier1", "CFB_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
 	weapons[] = {"arifle_MX_GL_Black_F", "Throw", "Put"};
+	respawnWeapons[] = {"arifle_MX_GL_Black_F", "Throw", "Put"};
 };
 
 class B_soldier_AR_F;
@@ -45,18 +47,36 @@ class CFB_TW_Soldier_AR : B_soldier_AR_F
 	displayName = "Autorifleman";
 	nakedUniform = "U_BasicBody";
 	uniformClass = "CFB_TW_Tshirt_Uniform";
-	backpack = "CFB_TW_Backpack_Kitbag";
+	backpack = "CFB_TW_Backpack_Assault";
 	hiddenSelections[] = { "Camo" };
 	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_TW_Uniform_NATO.paa" };
 	
 	linkedItems[] = {"CFB_TW_Vest_PlateCarrier1", "CFB_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
 	weapons[] = { "LMG_Mk200_F", "Throw", "Put" };
+	respawnWeapons[] = { "LMG_Mk200_F", "Throw", "Put" };
+	magazines[] =
+		{
+			"200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "HandGrenade", "MiniGrenade", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green"
+		};
+	respawnMagazines[] =
+		{
+			"200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "HandGrenade", "MiniGrenade", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green"
+		};
 };
 class CFB_TW_Soldier_MMG : CFB_TW_Soldier_AR
 {
 	displayName = "Autorifleman (MMG)";
 	linkedItems[] = {"CFB_TW_Vest_PlateCarrier1", "CFB_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
 	weapons[] = { "LMG_Zafir_F", "Throw", "Put" };
+	respawnWeapons[] = { "LMG_Zafir_F", "Throw", "Put" };
+	magazines[] =
+		{
+			"150Rnd_762x51_Box", "150Rnd_762x51_Box", "150Rnd_762x51_Box", "150Rnd_762x51_Box", "HandGrenade", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green"
+		};
+	respawnMagazines[] =
+		{
+			"150Rnd_762x51_Box", "150Rnd_762x51_Box", "150Rnd_762x51_Box", "150Rnd_762x51_Box", "HandGrenade", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green"
+		};
 };
 
 class B_soldier_M_F;
@@ -75,6 +95,7 @@ class CFB_TW_Soldier_Marksman : B_soldier_M_F
 	
 	linkedItems[] = { "CFB_TW_Vest_Tactical", "CFB_TW_Boonie", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
 	weapons[] = { "arifle_MXM_Black_F", "Throw", "Put" };
+	respawnWeapons[] = { "arifle_MXM_Black_F", "Throw", "Put" };
 };
 
 class B_Soldier_GL_F;
@@ -93,6 +114,7 @@ class CFB_TW_Soldier_GL : B_Soldier_GL_F
 	
 	linkedItems[] = { "CFB_TW_Vest_PlateCarrier2", "CFB_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
 	weapons[] = { "arifle_MX_GL_Black_F", "Throw", "Put" };
+	respawnWeapons[] = { "arifle_MX_GL_Black_F", "Throw", "Put" };
 };
 
 class B_medic_F;
@@ -111,6 +133,7 @@ class CFB_TW_Soldier_Medic : B_medic_F
 	
 	linkedItems[] = { "CFB_TW_Vest_Tactical", "CFB_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
 	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+	respawnWeapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
 };
 
 class B_soldier_LAT_F;
@@ -128,7 +151,8 @@ class CFB_TW_Soldier_LAT : B_soldier_LAT_F
 	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_TW_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "CFB_TW_Vest_PlateCarrier1", "CFB_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
-	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+	weapons[] = { "arifle_MXC_Black_F", "launch_NLAW_F", "Throw", "Put" };
+	respawnWeapons[] = { "arifle_MXC_Black_F", "launch_NLAW_F", "Throw", "Put" };
 };
 
 class B_Soldier_A_F;
@@ -147,30 +171,23 @@ class CFB_TW_Soldier_AmmoBearer : B_Soldier_A_F
 	
 	linkedItems[] = { "CFB_TW_Vest_PlateCarrier1", "CFB_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
 	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+	respawnWeapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
 };
 class CFB_TW_Soldier_AmmoBearer_AT : CFB_TW_Soldier_AmmoBearer
 {
 	displayName = "Ammo Bearer (AT)";
-	linkedItems[] = { "CFB_TW_Vest_PlateCarrier1", "CFB_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
-	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
 };
 class CFB_TW_Soldier_AmmoBearer_AA : CFB_TW_Soldier_AmmoBearer
 {
 	displayName = "Ammo Bearer (AA)";
-	linkedItems[] = { "CFB_TW_Vest_PlateCarrier1", "CFB_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
-	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
 };
 class CFB_TW_Soldier_AmmoBearer_AR : CFB_TW_Soldier_AmmoBearer
 {
 	displayName = "Ammo Bearer (AR)";
-	linkedItems[] = { "CFB_TW_Vest_PlateCarrier1", "CFB_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
-	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
 };
 class CFB_TW_Soldier_AmmoBearer_MMG : CFB_TW_Soldier_AmmoBearer
 {
 	displayName = "Ammo Bearer (MMG)";
-	linkedItems[] = { "CFB_TW_Vest_PlateCarrier1", "CFB_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
-	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
 };
 
 class B_soldier_AT_F;
@@ -188,7 +205,8 @@ class CFB_TW_Soldier_AT : B_soldier_AT_F
 	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_TW_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "CFB_TW_Vest_PlateCarrier1", "CFB_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
-	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+	weapons[] = { "arifle_MXC_Black_F", "launch_I_Titan_short_F", "Throw", "Put" };
+	respawnWeapons[] = { "arifle_MXC_Black_F", "launch_I_Titan_short_F", "Throw", "Put" };
 };
 
 class B_soldier_AA_F;
@@ -206,7 +224,8 @@ class CFB_TW_Soldier_AA : B_soldier_AA_F
 	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_TW_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "CFB_TW_Vest_PlateCarrier1", "CFB_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
-	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+	weapons[] = { "arifle_MXC_Black_F", "launch_I_Titan_F", "Throw", "Put" };
+	respawnWeapons[] = { "arifle_MXC_Black_F", "launch_I_Titan_F", "Throw", "Put" };
 };
 
 class B_engineer_F;
@@ -225,6 +244,7 @@ class CFB_TW_Soldier_Engineer : B_engineer_F
 	
 	linkedItems[] = { "CFB_TW_Vest_Tactical", "CFB_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
 	weapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
+	respawnWeapons[] = { "arifle_MXC_Black_F", "Throw", "Put" };
 };
 
 

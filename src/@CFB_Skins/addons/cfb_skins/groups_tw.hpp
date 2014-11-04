@@ -62,4 +62,47 @@ class CFB_Groups_CADPAT_TW
 		class Unit1 { side = 1; vehicle = "CFB_TW_Soldier"; rank = "PRIVATE"; position[] = {5,-5,0}; };
 		class Unit2 { side = 1; vehicle = "CFB_TW_Soldier"; rank = "PRIVATE"; position[] = {-5,-5,0}; };
 	};
+	
+	class CFB_Groups_CADPAT_TW_AT_Team
+	{
+		faction = "CFB_Base_Faction";
+		name = "AT Missile Group";
+		side = 1;
+		
+		class Unit0 { side = 1; vehicle = "CFB_TW_Soldier_AT"; rank = "CORPORAL"; position[] = {0,0,0}; };
+		class Unit1 { side = 1; vehicle = "CFB_TW_Soldier_AmmoBearer_AT"; rank = "PRIVATE"; position[] = {5,-5,0}; };
+		class Unit2 { side = 1; vehicle = "CFB_TW_Soldier_AmmoBearer_AT"; rank = "PRIVATE"; position[] = {-5,-5,0}; };
+	};
+	
+	class CFB_Groups_CADPAT_TW_AA_Team
+	{
+		faction = "CFB_Base_Faction";
+		name = "AA Missile Group";
+		side = 1;
+		
+		class Unit0 { side = 1; vehicle = "CFB_TW_Soldier_AA"; rank = "CORPORAL"; position[] = {0,0,0}; };
+		class Unit1 { side = 1; vehicle = "CFB_TW_Soldier_AmmoBearer_AA"; rank = "PRIVATE"; position[] = {5,-5,0}; };
+		class Unit2 { side = 1; vehicle = "CFB_TW_Soldier_AmmoBearer_AA"; rank = "PRIVATE"; position[] = {-5,-5,0}; };
+	};
+	
+	class CFB_Groups_CADPAT_TW_Engineer_Team
+	{
+		faction = "CFB_Base_Faction";
+		name = "Engineer Group";
+		side = 1;
+		
+		class Unit0 { side = 1; vehicle = "CFB_TW_Soldier_Engineer"; rank = "CORPORAL"; position[] = {0,0,0}; };
+		class Unit1 { side = 1; vehicle = "CFB_TW_Soldier_Engineer"; rank = "PRIVATE"; position[] = {5,-5,0}; };
+		class Unit2 { side = 1; vehicle = "CFB_TW_Soldier_Engineer"; rank = "PRIVATE"; position[] = {-5,-5,0}; };
+	};
+	
+	class CFB_Groups_CADPAT_TW_Sentry
+	{
+		faction = "CFB_Base_Faction";
+		name = "Sentry Team";
+		side = 1;
+		
+		class Unit0 { side = 1; vehicle = "CFB_TW_Soldier"; rank = "CORPORAL"; position[] = {0,0,0}; };
+		class Unit1 { side = 1; vehicle = "CFB_TW_Soldier_GL"; rank = "PRIVATE"; position[] = {5,-5,0}; };
+	};
 };
