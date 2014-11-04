@@ -6,6 +6,30 @@ Check out the project at: https://github.com/astruyk/CFB_Skins for more informat
 
 Changelog
 
+2.0.0
+* Incremented version number to 2.0.0 because of class name changes which would break existing missions.
+* Completely re-did the CADPAT TW texture to include more detail based on real-world samples instead of digital approximation
+* Added new JTF2 faction with black themed uniforms and helmets
+* Added a lot of new units with CADPAT TW & JTF2 setups:
+  * Rifleman (AT)
+  * Ammobearer (Rifle/AT/AA/AR/MMG)
+  * Missile Specialist (AT)
+  * Missile Specialist (AA)
+  * Engineer
+* Added groups for CADPAT TW & JTF2 setups:
+  * Rifle Section (8 men)
+  * Rifle Assault Group (4 men)
+  * Support Assault Group (4 men)
+  * Marksman Team (2 men)
+  * MMG Weapons Group (3 men)
+  * AT Missile Group (3 men)
+  * AA Missile Group (3 men)
+  * Engineer Group  (3 men)
+  * Sentry Team (2 men)
+* Modified some existing unit display names to match the ones in vanilla arma
+* A bunch of unit definition cleanup (mostly behind the scenes stuff, but names should be final now)
+* Fixed some units not showing up correctly in Zeus
+
 1.0.1
 * Signed addon with unique key (not debug key)
 
