@@ -3,8 +3,6 @@ import re;
 inputFileName = "../src/@CFB_Skins/addons/cfb_skins/groups_tw.hpp";
 outputFileName = "../src/@CFB_Skins/addons/cfb_skins/groups_jtf2.hpp";
 
-classNameRegex = re.compile('class ([\w]+) : [\w]+');
-
 with open(inputFileName, 'r') as inputFile:
 	with open(outputFileName, 'w') as outputFile:
 		for line in inputFile:
