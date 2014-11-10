@@ -42,8 +42,17 @@ with open(inputFileName, 'r') as inputFile:
 			line = line.replace("CFB_TW_Boonie", "CFB_JTF2_Helmet"); # TMP - need alternate hat to boonie
 			line = line.replace("CFB_TW_Patrol", "CFB_JTF2_Helmet"); # TMP - need alternate hat to patrol
 			line = line.replace("CFB_TW_Backpack_Assault", "B_AssaultPack_blk");
-			line = line.replace("CFB_TW_Backpack_Kitbag", "B_Kitbag_rgr");
+			line = line.replace("\"CFB_TW_Backpack_Kitbag\"", "\"B_Kitbag_rgr\"");
 			line = line.replace("CFB_TW_Vest_Tactical", "V_TacVestIR_blk");
+			
+			# Change the weapons to silenced versions
+			line = line.replace("CFB_MX_Black_MRCO", "arifle_MX_ACO_pointer_snds_F");
+			line = line.replace("CFB_MXM_Black_SOS", "arifle_MXM_RCO_pointer_snds_F");
+			line = line.replace("CFB_MX_GL_Black_MRCO", "arifle_MX_GL_Holo_pointer_snds_F");
+			line = line.replace("CFB_MXC_Black_MRCO", "arifle_MXC_Holo_pointer_snds_F");
+			
+			# Add some extra linked items
+			line = line.replace("linkedItems[] = {", "linkedItems[] = { \"G_Balaclava_blk\",");
 			
 			# HACK - MMG and AR gunners should get a different vest since there is no BIS black PlateCarrier2 equivalent.
 			if "Soldier_MMG" in currentClassName or "Soldier_AR" in currentClassName:
