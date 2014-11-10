@@ -263,12 +263,32 @@ class CFB_TW_Backpack_Assault_GL : CFB_TW_Backpack_Assault
 		class _xx_30Rnd_65x39_caseless_mag
 		{
 			magazine = "30Rnd_65x39_caseless_mag";
-			count = 4;
+			count = 2;
 		};
 		class _xx_30Rnd_65x39_caseless_mag_Tracer
 		{
 			magazine = "30Rnd_65x39_caseless_mag_Tracer";
-			count = 3;
+			count = 1;
+		};
+		class _xx_1Rnd_HE_Grenade_shell
+		{
+			magazine = "1Rnd_HE_Grenade_shell";
+			count = 15;
+		};
+		class _xxx_1Rnd_Smoke_Grenade_shell
+		{
+			magazine = "1Rnd_Smoke_Grenade_shell";
+			count  = 5;
+		};
+		class _xxx_1Rnd_SmokeRed_Grenade_shell
+		{
+			magazine = "1Rnd_SmokeRed_Grenade_shell";
+			count  = 3;
+		};
+		class _xxx_1Rnd_SmokeGreen_Grenade_shell
+		{
+			magazine = "1Rnd_SmokeGreen_Grenade_shell";
+			count  = 3;
 		};
 	};
 };
