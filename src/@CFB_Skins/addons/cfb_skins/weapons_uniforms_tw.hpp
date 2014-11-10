@@ -3,7 +3,7 @@ class CFB_TW_Uniform : U_B_CombatUniform_mcam
 {
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "CADPAD Combat Uniform";
+	displayName = "CADPAT Combat Uniform";
 	picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
 	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	
@@ -23,7 +23,7 @@ class CFB_TW_Rolled_Uniform : U_B_CombatUniform_mcam_vest
 {
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "CADPAD Combat Uniform (Rolled Up)";
+	displayName = "CADPAT Combat Uniform (Rolled Up)";
 	picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
 	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	author = "Anton Struyk";
@@ -42,7 +42,7 @@ class CFB_TW_Tshirt_Uniform : U_B_CombatUniform_mcam_tshirt
 {
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "CADPAD Combat Uniform (Tee)";
+	displayName = "CADPAT Combat Uniform (Tee)";
 	picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
 	model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 	author = "Anton Struyk";
