@@ -24,7 +24,7 @@ class CFB_TW_Soldier_TL : B_Soldier_TL_F
 	vehicleClass = "CFB_TW_VehicleClass";
 	displayName = "Section Leader";
 	uniformClass = "CFB_TW_Rolled_Uniform";
-	backpack = "CFB_TW_Backpack_Assault_TL";
+	backpack = "CFB_TW_Backpack_Assault_GL";
 	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_TW_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "CFB_TW_Vest_PlateCarrier1", "CFB_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
@@ -87,7 +87,7 @@ class CFB_TW_Soldier_GL : B_Soldier_GL_F
 	vehicleClass = "CFB_TW_VehicleClass";
 	displayName = "Grenadier";
 	uniformClass = "CFB_TW_Uniform";
-	backpack = "CFB_TW_Backpack_Assault";
+	backpack = "CFB_TW_Backpack_Assault_GL";
 	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_TW_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "CFB_TW_Vest_PlateCarrier2", "CFB_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
@@ -215,7 +215,7 @@ class CFB_TW_Soldier_Engineer : B_engineer_F
 	vehicleClass = "CFB_TW_VehicleClass";
 	displayName = "Engineer";
 	uniformClass = "CFB_TW_Tshirt_Uniform";
-	backpack = "CFB_TW_Backpack_Kitbag";
+	backpack = "CFB_TW_Backpack_Kitbag_Engineer";
 	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_TW_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "CFB_TW_Vest_Tactical", "CFB_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };

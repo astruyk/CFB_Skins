@@ -246,7 +246,7 @@ class CFB_TW_Backpack_Assault_Rifleman : CFB_TW_Backpack_Assault
 	};
 };
 
-class CFB_TW_Backpack_Assault_TL : CFB_TW_Backpack_Assault
+class CFB_TW_Backpack_Assault_GL : CFB_TW_Backpack_Assault
 {
 	scope = 1;
 	scopeCurator = 1;
@@ -317,7 +317,49 @@ class CFB_TW_Backpack_Assault_MMG : CFB_TW_Backpack_Assault
 		class _xx_150Rnd_762x51_Box
 		{
 			magazine = "150Rnd_762x51_Box";
+			count = 3;
+		};
+	};
+};
+
+class CFB_TW_Backpack_Kitbag_Engineer : CFB_TW_Backpack_Kitbag
+{
+	scope = 1;
+	scopeCurator = 1;
+	class TransportItems
+	{
+		class _xx_MineDetector
+		{
+			name = "MineDetector";
+			count = 1;
+		};
+		class _xx_ToolKit
+		{
+			name = "ToolKit";
+			count = 1;
+		};
+	};
+	class TransportMagazines
+	{
+		class _xx_30Rnd_65x39_caseless_mag
+		{
+			magazine = "30Rnd_65x39_caseless_mag";
 			count = 2;
+		};
+		class _xx_30Rnd_65x39_caseless_mag_Tracer
+		{
+			magazine = "30Rnd_65x39_caseless_mag_Tracer";
+			count = 2;
+		};
+		class _xx_ClaymoreDirectionalMine_Remote_Mag
+		{
+			magazine = "ClaymoreDirectionalMine_Remote_Mag";
+			count = 2;
+		};
+		class _xx_DemoCharge_Remote_Mag
+		{
+			magazine = "DemoCharge_Remote_Mag";
+			count = 3;
 		};
 	};
 };
