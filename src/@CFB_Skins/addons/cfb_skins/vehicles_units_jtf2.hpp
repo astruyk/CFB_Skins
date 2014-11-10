@@ -7,7 +7,7 @@ class CFB_JTF2_Soldier : B_Soldier_F
 	vehicleClass = "CFB_JTF2_VehicleClass";
 	displayName = "Rifleman";
 	uniformClass = "CFB_JTF2_Uniform";
-	backpack = "B_AssaultPack_blk";
+	backpack = "CFB_JTF2_Backpack_Assault_Rifleman";
 	hiddenSelectionsTextures[] = { "\cfb_skins\JTF2_Uniform_NATO.paa" };
 
 	linkedItems[] = { "G_Balaclava_blk", "V_PlateCarrier1_blk", "CFB_JTF2_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_OPFOR" };
@@ -24,7 +24,7 @@ class CFB_JTF2_Soldier_TL : B_Soldier_TL_F
 	vehicleClass = "CFB_JTF2_VehicleClass";
 	displayName = "Section Leader";
 	uniformClass = "CFB_JTF2_Rolled_Uniform";
-	backpack = "B_AssaultPack_blk";
+	backpack = "CFB_JTF2_Backpack_Assault_GL";
 	hiddenSelectionsTextures[] = { "\cfb_skins\JTF2_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "G_Balaclava_blk", "V_PlateCarrier1_blk", "CFB_JTF2_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_OPFOR" };
@@ -41,7 +41,7 @@ class CFB_JTF2_Soldier_AR : B_soldier_AR_F
 	vehicleClass = "CFB_JTF2_VehicleClass";
 	displayName = "Autorifleman";
 	uniformClass = "CFB_JTF2_Rolled_Uniform";
-	backpack = "B_AssaultPack_blk";
+	backpack = "CFB_JTF2_Backpack_Assault_AR";
 	hiddenSelectionsTextures[] = { "\cfb_skins\JTF2_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "G_Balaclava_blk","V_Chestrig_blk", "CFB_JTF2_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_OPFOR" };
@@ -53,6 +53,7 @@ class CFB_JTF2_Soldier_AR : B_soldier_AR_F
 class CFB_JTF2_Soldier_MMG : CFB_JTF2_Soldier_AR
 {
 	displayName = "Autorifleman (MMG)";
+	backpack = "CFB_JTF2_Backpack_Assault_MMG";
 	linkedItems[] = { "G_Balaclava_blk","V_Chestrig_blk", "CFB_JTF2_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_OPFOR" };
 	weapons[] = { "CFB_Zafir_MRCO", "Throw", "Put" };
 	respawnWeapons[] = { "CFB_Zafir_MRCO", "Throw", "Put" };
@@ -69,7 +70,7 @@ class CFB_JTF2_Soldier_Marksman : B_soldier_M_F
 	vehicleClass = "CFB_JTF2_VehicleClass";
 	displayName = "Marksman";
 	uniformClass = "CFB_JTF2_Rolled_Uniform";
-	backpack = "B_AssaultPack_blk";
+	backpack = "CFB_JTF2_Backpack_Assault_Rifleman";
 	hiddenSelectionsTextures[] = { "\cfb_skins\JTF2_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "G_Balaclava_blk", "V_TacVestIR_blk", "CFB_JTF2_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_OPFOR" };
@@ -86,7 +87,7 @@ class CFB_JTF2_Soldier_GL : B_Soldier_GL_F
 	vehicleClass = "CFB_JTF2_VehicleClass";
 	displayName = "Grenadier";
 	uniformClass = "CFB_JTF2_Uniform";
-	backpack = "B_AssaultPack_blk";
+	backpack = "CFB_JTF2_Backpack_Assault_GL";
 	hiddenSelectionsTextures[] = { "\cfb_skins\JTF2_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "G_Balaclava_blk", "V_PlateCarrier1_blk", "CFB_JTF2_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_OPFOR" };
@@ -103,7 +104,7 @@ class CFB_JTF2_Soldier_Medic : B_medic_F
 	vehicleClass = "CFB_JTF2_VehicleClass";
 	displayName = "Combat Medic";
 	uniformClass = "CFB_JTF2_Rolled_Uniform";
-	backpack = "B_Kitbag_rgr";
+	backpack = "CFB_JTF2_Backpack_Kitbag_Medic";
 	hiddenSelectionsTextures[] = { "\cfb_skins\JTF2_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "G_Balaclava_blk", "V_TacVestIR_blk", "CFB_JTF2_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_OPFOR" };
@@ -120,7 +121,7 @@ class CFB_JTF2_Soldier_LAT : B_soldier_LAT_F
 	vehicleClass = "CFB_JTF2_VehicleClass";
 	displayName = "Rifleman (AT)";
 	uniformClass = "CFB_JTF2_Rolled_Uniform";
-	backpack = "CFB_TW_Backpack_Kitbag_LAT";
+	backpack = "CFB_JTF2_Backpack_Kitbag_LAT";
 	hiddenSelectionsTextures[] = { "\cfb_skins\JTF2_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "G_Balaclava_blk", "V_PlateCarrier1_blk", "CFB_JTF2_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_OPFOR" };
@@ -139,7 +140,7 @@ class CFB_JTF2_Soldier_AmmoBearer : B_Soldier_A_F
 	vehicleClass = "CFB_JTF2_VehicleClass";
 	displayName = "Ammo Bearer (Rifle)";
 	uniformClass = "CFB_JTF2_Rolled_Uniform";
-	backpack = "CFB_TW_Backpack_Kitbag_Ammo";
+	backpack = "CFB_JTF2_Backpack_Kitbag_Ammo";
 	hiddenSelectionsTextures[] = { "\cfb_skins\JTF2_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "G_Balaclava_blk", "V_PlateCarrier1_blk", "CFB_JTF2_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_OPFOR" };
@@ -159,12 +160,12 @@ class CFB_JTF2_Soldier_AmmoBearer_AA : CFB_JTF2_Soldier_AmmoBearer
 class CFB_JTF2_Soldier_AmmoBearer_AR : CFB_JTF2_Soldier_AmmoBearer
 {
 	displayName = "Ammo Bearer (AR)";
-	backpack = "CFB_TW_Backpack_Kitbag_AR";
+	backpack = "CFB_JTF2_Backpack_Kitbag_AR";
 };
 class CFB_JTF2_Soldier_AmmoBearer_MMG : CFB_JTF2_Soldier_AmmoBearer
 {
 	displayName = "Ammo Bearer (MMG)";
-	backpack = "CFB_TW_Backpack_Kitbag_MMG";
+	backpack = "CFB_JTF2_Backpack_Kitbag_MMG";
 };
 
 // class B_soldier_AT_F;
@@ -176,7 +177,7 @@ class CFB_JTF2_Soldier_AT : B_soldier_AT_F
 	vehicleClass = "CFB_JTF2_VehicleClass";
 	displayName = "Missile Specialist (AT)";
 	uniformClass = "CFB_JTF2_Rolled_Uniform";
-	backpack = "CFB_TW_Backpack_Kitbag_AT";
+	backpack = "CFB_JTF2_Backpack_Kitbag_AT";
 	hiddenSelectionsTextures[] = { "\cfb_skins\JTF2_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "G_Balaclava_blk", "V_PlateCarrier1_blk", "CFB_JTF2_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_OPFOR" };
@@ -195,7 +196,7 @@ class CFB_JTF2_Soldier_AA : B_soldier_AA_F
 	vehicleClass = "CFB_JTF2_VehicleClass";
 	displayName = "Missile Specialist (AA)";
 	uniformClass = "CFB_JTF2_Rolled_Uniform";
-	backpack = "CFB_TW_Backpack_Kitbag_AA";
+	backpack = "CFB_JTF2_Backpack_Kitbag_AA";
 	hiddenSelectionsTextures[] = { "\cfb_skins\JTF2_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "G_Balaclava_blk", "V_PlateCarrier1_blk", "CFB_JTF2_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_OPFOR" };
@@ -214,7 +215,7 @@ class CFB_JTF2_Soldier_Engineer : B_engineer_F
 	vehicleClass = "CFB_JTF2_VehicleClass";
 	displayName = "Engineer";
 	uniformClass = "CFB_JTF2_Rolled_Uniform";
-	backpack = "B_Kitbag_rgr";
+	backpack = "CFB_JTF2_Backpack_Kitbag_Engineer";
 	hiddenSelectionsTextures[] = { "\cfb_skins\JTF2_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "G_Balaclava_blk", "V_TacVestIR_blk", "CFB_JTF2_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_OPFOR" };
