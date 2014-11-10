@@ -28,7 +28,14 @@ class CFB_TW_Backpack_Kitbag_LAT : CFB_TW_Backpack_Kitbag
 {
 	scope = 1;
 	scopeCurator = 1;
-	
+	class TransportItems
+	{
+		class _xx_FirstAidKit
+		{
+			name = "FirstAidKit";
+			count = 2;
+		};
+	};
 	class TransportMagazines
 	{
 		class _xx_NLAW_F
@@ -43,7 +50,14 @@ class CFB_TW_Backpack_Kitbag_Ammo : CFB_TW_Backpack_Kitbag
 {
 	scope = 1;
 	scopeCurator = 1;
-	
+	class TransportItems
+	{
+		class _xx_FirstAidKit
+		{
+			name = "FirstAidKit";
+			count = 2;
+		};
+	};
 	class TransportMagazines
 	{
 		class _xx_NLAW_F
@@ -56,25 +70,15 @@ class CFB_TW_Backpack_Kitbag_Ammo : CFB_TW_Backpack_Kitbag
 			magazine = "200Rnd_65x39_cased_Box";
 			count = 2;
 		};
-		class _xx_200Rnd_65x39_cased_Box_Tracer
-		{
-			magazine = "200Rnd_65x39_cased_Box_Tracer";
-			count = 1;
-		};
 		class _xx_30Rnd_65x39_caseless_mag
 		{
 			magazine = "30Rnd_65x39_caseless_mag";
-			count = 1;
+			count = 7;
 		};
 		class _xx_30Rnd_65x39_caseless_mag_Tracer
 		{
 			magazine = "30Rnd_65x39_caseless_mag_Tracer";
-			count = 1;
-		};
-		class _xx_30Rnd_65x39_caseless_green_mag_Tracer
-		{
-			magazine = "30Rnd_65x39_caseless_green_mag_Tracer";
-			count = 1;
+			count = 3;
 		};
 	};
 };
@@ -83,7 +87,14 @@ class CFB_TW_Backpack_Kitbag_AT : CFB_TW_Backpack_Kitbag
 {
 	scope = 1;
 	scopeCurator = 1;
-	
+	class TransportItems
+	{
+		class _xx_FirstAidKit
+		{
+			name = "FirstAidKit";
+			count = 1;
+		};
+	};
 	class TransportMagazines
 	{
 		class _xx_Titan_AT
@@ -103,7 +114,14 @@ class CFB_TW_Backpack_Kitbag_AA : CFB_TW_Backpack_Kitbag
 {
 	scope = 1;
 	scopeCurator = 1;
-	
+	class TransportItems
+	{
+		class _xx_FirstAidKit
+		{
+			name = "FirstAidKit";
+			count = 1;
+		};
+	};
 	class TransportMagazines
 	{
 		class _xx_Titan_AA
@@ -118,7 +136,14 @@ class CFB_TW_Backpack_Kitbag_AR : CFB_TW_Backpack_Kitbag
 {
 	scope = 1;
 	scopeCurator = 1;
-	
+	class TransportItems
+	{
+		class _xx_FirstAidKit
+		{
+			name = "FirstAidKit";
+			count = 2;
+		};
+	};
 	class TransportMagazines
 	{
 		class _xx_200Rnd_65x39_cased_Box
@@ -139,6 +164,14 @@ class CFB_TW_Backpack_Kitbag_MMG : CFB_TW_Backpack_Kitbag
 	scope = 1;
 	scopeCurator = 1;
 	
+	class TransportItems
+	{
+		class _xx_FirstAidKit
+		{
+			name = "FirstAidKit";
+			count = 2;
+		};
+	};
 	class TransportMagazines
 	{
 		class _xx_150Rnd_762x51_Box
@@ -149,6 +182,141 @@ class CFB_TW_Backpack_Kitbag_MMG : CFB_TW_Backpack_Kitbag
 		class _xx_150Rnd_762x51_Box_Tracer
 		{
 			magazine = "150Rnd_762x51_Box_Tracer";
+			count = 2;
+		};
+	};
+};
+
+class CFB_TW_Backpack_Kitbag_Medic : CFB_TW_Backpack_Kitbag
+{
+	scope = 1;
+	scopeCurator = 1;
+	class TransportItems
+	{
+		class _xx_FirstAidKit
+		{
+			name = "FirstAidKit";
+			count = 15;
+		};
+		class _xx_Medikit
+		{
+			name = "Medikit";
+			count = 1;
+		};
+	};
+	class TransportMagazines
+	{
+		class _xx_30Rnd_65x39_caseless_mag
+		{
+			magazine = "30Rnd_65x39_caseless_mag";
+			count = 2;
+		};
+		class _xx_30Rnd_65x39_caseless_mag_Tracer
+		{
+			magazine = "30Rnd_65x39_caseless_mag_Tracer";
+			count = 2;
+		};
+	};
+};
+
+class CFB_TW_Backpack_Assault_Rifleman : CFB_TW_Backpack_Assault
+{
+	scope = 1;
+	scopeCurator = 1;
+	class TransportItems
+	{
+		class _xx_FirstAidKit
+		{
+			name = "FirstAidKit";
+			count = 3;
+		};
+	};
+	class TransportMagazines
+	{
+		class _xx_30Rnd_65x39_caseless_mag
+		{
+			magazine = "30Rnd_65x39_caseless_mag";
+			count = 4;
+		};
+		class _xx_30Rnd_65x39_caseless_mag_Tracer
+		{
+			magazine = "30Rnd_65x39_caseless_mag_Tracer";
+			count = 3;
+		};
+	};
+};
+
+class CFB_TW_Backpack_Assault_TL : CFB_TW_Backpack_Assault
+{
+	scope = 1;
+	scopeCurator = 1;
+	class TransportItems
+	{
+		class _xx_FirstAidKit
+		{
+			name = "FirstAidKit";
+			count = 2;
+		};
+	};
+	class TransportMagazines
+	{
+		class _xx_30Rnd_65x39_caseless_mag
+		{
+			magazine = "30Rnd_65x39_caseless_mag";
+			count = 4;
+		};
+		class _xx_30Rnd_65x39_caseless_mag_Tracer
+		{
+			magazine = "30Rnd_65x39_caseless_mag_Tracer";
+			count = 3;
+		};
+	};
+};
+
+class CFB_TW_Backpack_Assault_AR : CFB_TW_Backpack_Assault
+{
+	scope = 1;
+	scopeCurator = 1;
+	class TransportItems
+	{
+		class _xx_FirstAidKit
+		{
+			name = "FirstAidKit";
+			count = 2;
+		};
+	};
+	class TransportMagazines
+	{
+		class _xx_200Rnd_65x39_cased_Box
+		{
+			magazine = "200Rnd_65x39_cased_Box";
+			count = 2;
+		};
+		class _xx_200Rnd_65x39_cased_Box_Tracer
+		{
+			magazine = "200Rnd_65x39_cased_Box_Tracer";
+			count = 1;
+		};
+	};
+};
+
+class CFB_TW_Backpack_Assault_MMG : CFB_TW_Backpack_Assault
+{
+	scope = 1;
+	scopeCurator = 1;
+	class TransportItems
+	{
+		class _xx_FirstAidKit
+		{
+			name = "FirstAidKit";
+			count = 2;
+		};
+	};
+	class TransportMagazines
+	{
+		class _xx_150Rnd_762x51_Box
+		{
+			magazine = "150Rnd_762x51_Box";
 			count = 2;
 		};
 	};

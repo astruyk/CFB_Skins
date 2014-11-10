@@ -7,7 +7,7 @@ class CFB_TW_Soldier : B_Soldier_F
 	vehicleClass = "CFB_TW_VehicleClass";
 	displayName = "Rifleman";
 	uniformClass = "CFB_TW_Uniform";
-	backpack = "CFB_TW_Backpack_Assault";
+	backpack = "CFB_TW_Backpack_Assault_Rifleman";
 	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_TW_Uniform_NATO.paa" };
 
 	linkedItems[] = { "CFB_TW_Vest_PlateCarrier2", "CFB_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
@@ -24,7 +24,7 @@ class CFB_TW_Soldier_TL : B_Soldier_TL_F
 	vehicleClass = "CFB_TW_VehicleClass";
 	displayName = "Section Leader";
 	uniformClass = "CFB_TW_Rolled_Uniform";
-	backpack = "CFB_TW_Backpack_Assault";
+	backpack = "CFB_TW_Backpack_Assault_TL";
 	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_TW_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "CFB_TW_Vest_PlateCarrier1", "CFB_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
@@ -41,7 +41,7 @@ class CFB_TW_Soldier_AR : B_soldier_AR_F
 	vehicleClass = "CFB_TW_VehicleClass";
 	displayName = "Autorifleman";
 	uniformClass = "CFB_TW_Tshirt_Uniform";
-	backpack = "CFB_TW_Backpack_Assault";
+	backpack = "CFB_TW_Backpack_Assault_AR";
 	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_TW_Uniform_NATO.paa" };
 	
 	linkedItems[] = {"CFB_TW_Vest_PlateCarrier1", "CFB_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
@@ -53,6 +53,7 @@ class CFB_TW_Soldier_AR : B_soldier_AR_F
 class CFB_TW_Soldier_MMG : CFB_TW_Soldier_AR
 {
 	displayName = "Autorifleman (MMG)";
+	backpack = "CFB_TW_Backpack_Assault_MMG";
 	linkedItems[] = {"CFB_TW_Vest_PlateCarrier1", "CFB_TW_Helmet", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
 	weapons[] = { "CFB_Zafir_MRCO", "Throw", "Put" };
 	respawnWeapons[] = { "CFB_Zafir_MRCO", "Throw", "Put" };
@@ -69,7 +70,7 @@ class CFB_TW_Soldier_Marksman : B_soldier_M_F
 	vehicleClass = "CFB_TW_VehicleClass";
 	displayName = "Marksman";
 	uniformClass = "CFB_TW_Rolled_Uniform";
-	backpack = "CFB_TW_Backpack_Assault";
+	backpack = "CFB_TW_Backpack_Assault_Rifleman";
 	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_TW_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "CFB_TW_Vest_Tactical", "CFB_TW_Boonie", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
@@ -103,7 +104,7 @@ class CFB_TW_Soldier_Medic : B_medic_F
 	vehicleClass = "CFB_TW_VehicleClass";
 	displayName = "Combat Medic";
 	uniformClass = "CFB_TW_Tshirt_Uniform";
-	backpack = "CFB_TW_Backpack_Kitbag";
+	backpack = "CFB_TW_Backpack_Kitbag_Medic";
 	hiddenSelectionsTextures[] = { "\cfb_skins\CADPAT_TW_Uniform_NATO.paa" };
 	
 	linkedItems[] = { "CFB_TW_Vest_Tactical", "CFB_TW_Patrol", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio", "NVGoggles_INDEP" };
