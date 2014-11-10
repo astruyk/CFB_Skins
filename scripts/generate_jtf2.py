@@ -85,8 +85,16 @@ def processGroupLines(line, currentClassName, indentDepth):
 	return line;
 
 def processBackpackLines(line, currentClassName, indentDepth):
+	# For each TW backpack generate a JTF2 backpack that is identical
 	line = line.replace("CFB_TW_Backpack", "CFB_JTF2_Backpack");
+	
+	# Change the base types of the JTF2 backpacks and make them not override the texture
+	# since we can use the built-in backpacks and don't have a custom texture.
+	line = line.replace("B_AssaultPack_cbr", "B_AssaultPack_blk");
+	line = line.replace("B_Kitbag_cbr", "B_Kitbag_sgg");
 	line = line.replace("hiddenSelectionsTextures", "// hiddenSelectionsTextures");
+	
+	# Since we're not defining any special appearance, we want to hide them for everything except the config.
 	line = line.replace("scope = 2;", "scope = 1;");
 	line = line.replace("scopeCurator = 2;", "scopeCurator = 1;");
 	return line;

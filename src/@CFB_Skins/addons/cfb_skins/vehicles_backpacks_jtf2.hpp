@@ -1,5 +1,5 @@
 // class B_AssaultPack_cbr;
-class CFB_JTF2_Backpack_Assault : B_AssaultPack_cbr
+class CFB_JTF2_Backpack_Assault : B_AssaultPack_blk
 {
 	side = 1;
 	scope = 1;
@@ -11,7 +11,7 @@ class CFB_JTF2_Backpack_Assault : B_AssaultPack_cbr
 };
 
 // class B_Kitbag_cbr;
-class CFB_JTF2_Backpack_Kitbag : B_Kitbag_cbr
+class CFB_JTF2_Backpack_Kitbag : B_Kitbag_sgg
 {
 	side = 1;
 	scope = 1;
