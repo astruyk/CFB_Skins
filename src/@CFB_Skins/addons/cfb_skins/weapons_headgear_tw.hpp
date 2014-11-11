@@ -5,7 +5,7 @@ class CFB_TW_Helmet : H_HelmetIA
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "CADPAT TW Helmet";
-	picture = "\cfb_skins\ui\CADPAT_UI_Icon.paa";
+	picture = "\cfb_skins\ui\CFB_TW_Helmet.paa";
 	author = "Anton Struyk";
 
 	hiddenSelections[] = {"camo"};
@@ -19,7 +19,7 @@ class CFB_TW_Boonie : H_Booniehat_tan
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "CADPAT TW Boonie Hat";
-	picture = "\cfb_skins\ui\CADPAT_UI_Icon.paa";
+	picture = "\cfb_skins\ui\CFB_TW_Boonie.paa";
 	author = "Anton Struyk";
 	
 	hiddenSelections[] = {"camo"};
@@ -33,7 +33,7 @@ class CFB_TW_Patrol : H_MilCap_gry
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "CADPAT TW Patrol Hat";
-	picture = "\cfb_skins\ui\CADPAT_UI_Icon.paa";
+	picture = "\cfb_skins\ui\CFB_TW_Patrol.paa";
 	author = "Anton Struyk";
 	
 	hiddenSelections[] = {"camo"};
