@@ -1,10 +1,21 @@
-Canadian Forces Base Skins V.1.0.1
+Canadian Forces Base Skins V.2.0.1
 
 Adds new skins for the base ARMA units inspired by Canadian Armed Forces.
 
 Check out the project at: https://github.com/astruyk/CFB_Skins for more information.
 
 Changelog
+
+2.0.1
+* Populate backpacks for units with appropriate equipment
+* Add optics and attachments to default unit setups
+* Add unique icons for all of the equipment
+* Fix typo in CADPAT uniform names where they were showing as 'CADPAD' instead
+* Use more appropriate backpack camo for units needing carryalls (most AT/AA ammobearers)
+* Fix some issues with uneccessarily overridden uniform weights and volumes (now they inherit from the base class correctly)
+* Fix an issue where there was a JTF2 member in one of the CADPAT TW groups
+* JTF2 units have balaclavas by default now
+* JTF2 units have some unique equipment now (silencers, tan rifles, different optics)
 
 2.0.0
 * Incremented version number to 2.0.0 because of class name changes which would break existing missions.
