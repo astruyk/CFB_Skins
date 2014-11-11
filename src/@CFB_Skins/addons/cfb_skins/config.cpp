@@ -71,17 +71,12 @@ class CfgPatches
 			"CFB_Helo_Cyclone",
 			
 			// Rebels
-			"CFB_Rebel_Soldier",
 			"CFB_Rebel_Officer",
-			"CFB_Rebel_TL",
-			"CFB_Rebel_AR",
-			"CFB_Rebel_GL",
 			"CFB_Rebel_GL_RPG",
 			"CFB_Rebel_LAT",
 			"CFB_Rebel_Marksman",
-			"CFB_Rebel_Medic",
+			"CFB_Rebel_AT",
 			"CFB_Rebel_AA",
-			"CFB_Rebel_Sniper",
 		};
 	};
 };
@@ -156,6 +151,11 @@ class CfgGroups
 			name = "Rebels";
 			#include "groups_rebel.hpp"
 		};
+		/*class CFB_Groups_Insurgents
+		{
+			name = "Insurgents";
+			#include "groups_insurgents.hpp"
+		};*/
 	};
 	class West
 	{
