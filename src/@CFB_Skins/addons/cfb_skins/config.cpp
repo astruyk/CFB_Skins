@@ -73,10 +73,7 @@ class CfgPatches
 			// Rebels
 			"CFB_Rebel_Officer",
 			"CFB_Rebel_GL_RPG",
-			"CFB_Rebel_LAT",
 			"CFB_Rebel_Marksman",
-			"CFB_Rebel_AT",
-			"CFB_Rebel_AA",
 		};
 	};
 };
