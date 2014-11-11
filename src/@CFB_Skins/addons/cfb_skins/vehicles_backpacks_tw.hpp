@@ -81,6 +81,35 @@ class CFB_TW_Backpack_Kitbag_Ammo : CFB_TW_Backpack_Kitbag
 	};
 };
 
+class B_Carryall_oli;
+class CFB_TW_Backpack_Carryall_AT : B_Carryall_oli
+{
+	scope = 1;
+	scopeCurator = 1;
+	class TransportMagazines
+	{
+		class _xx_Titan_AT
+		{
+			magazine = "Titan_AT";
+			count = 3;
+		};
+	};
+};
+
+class CFB_TW_Backpack_Carryall_AA : B_Carryall_oli
+{
+	scope = 1;
+	scopeCurator = 1;
+	class TransportMagazines
+	{
+		class _xx_Titan_AA
+		{
+			magazine = "Titan_AA";
+			count = 3;
+		};
+	};
+};
+
 class CFB_TW_Backpack_Kitbag_AT : CFB_TW_Backpack_Kitbag
 {
 	scope = 1;

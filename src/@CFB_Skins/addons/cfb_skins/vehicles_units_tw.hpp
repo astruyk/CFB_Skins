@@ -150,12 +150,12 @@ class CFB_TW_Soldier_AmmoBearer : B_Soldier_A_F
 class CFB_TW_Soldier_AmmoBearer_AT : CFB_TW_Soldier_AmmoBearer
 {
 	displayName = "Ammo Bearer (AT)";
-	backpack = "B_Carryall_mcamo_AAT";
+	backpack = "CFB_TW_Backpack_Carryall_AT";
 };
 class CFB_TW_Soldier_AmmoBearer_AA : CFB_TW_Soldier_AmmoBearer
 {
 	displayName = "Ammo Bearer (AA)";
-	backpack = "B_Carryall_mcamo_AAA";
+	backpack = "CFB_TW_Backpack_Carryall_AA";
 };
 class CFB_TW_Soldier_AmmoBearer_AR : CFB_TW_Soldier_AmmoBearer
 {

@@ -101,6 +101,7 @@ class CfgVehicles
 	#include "vehicles_units_rcaf.hpp"
 	#include "vehicles_units_jtf2.hpp"
 	#include "vehicles_backpacks_tw.hpp"
+	#include "vehicles_backpacks_jtf2.hpp"
 };
  
 class cfgWeapons
