@@ -1,8 +1,5 @@
 import re;
 
-
-
-
 def processFile(inputFileName, outputFileName, lineProcessFunction):
 	# Some regex's to help when processing.
 	preprocessorDefinition = re.compile('class [\w]+;');
@@ -102,6 +99,9 @@ def processBackpackLines(line, currentClassName, indentDepth):
 	# HACK - If we are defining the new base backpacks - we do need to forward-define their base packs.
 	line = line.replace("class CFB_JTF2_Backpack_Kitbag : B_Kitbag_rgr", "class B_Kitbag_rgr;\nclass CFB_JTF2_Backpack_Kitbag : B_Kitbag_rgr");
 	line = line.replace("class CFB_JTF2_Backpack_Assault : B_AssaultPack_blk", "class B_AssaultPack_blk;\nclass CFB_JTF2_Backpack_Assault : B_AssaultPack_blk");
+	
+	# Since we're using different base backpacks, we don't want to use the TW pictures
+	line = line.replace("picture =", "// picture =");
 	return line;
 
 processFile("../src/@CFB_Skins/addons/cfb_skins/vehicles_units_tw.hpp", "../src/@CFB_Skins/addons/cfb_skins/vehicles_units_jtf2.hpp", processUnitLines);

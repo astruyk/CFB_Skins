@@ -7,7 +7,6 @@ class CFB_TW_Helmet : H_HelmetIA
 	displayName = "CADPAT TW Helmet";
 	picture = "\cfb_skins\ui\CFB_TW_Helmet.paa";
 	author = "Anton Struyk";
-
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_TW_Helmet_AAF.paa"};
 };
@@ -21,7 +20,6 @@ class CFB_TW_Boonie : H_Booniehat_tan
 	displayName = "CADPAT TW Boonie Hat";
 	picture = "\cfb_skins\ui\CFB_TW_Boonie.paa";
 	author = "Anton Struyk";
-	
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_TW_Hat_Boonie.paa"};
 };
@@ -35,7 +33,6 @@ class CFB_TW_Patrol : H_MilCap_gry
 	displayName = "CADPAT TW Patrol Hat";
 	picture = "\cfb_skins\ui\CFB_TW_Patrol.paa";
 	author = "Anton Struyk";
-	
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_TW_Hat_Patrol.paa"};
 };
