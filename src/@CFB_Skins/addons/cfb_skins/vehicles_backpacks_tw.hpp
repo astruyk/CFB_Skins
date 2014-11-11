@@ -6,6 +6,7 @@ class CFB_TW_Backpack_Assault : B_AssaultPack_cbr
 	scopeCurator = 2;
 	displayName = "CADPAT TW Assault Backpack";
 	author = "Anton Struyk";
+	picture = "\cfb_skins\ui\CADPAT_UI_Icon.paa";
 
 	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_TW_Backpack_Assault.paa"};
 };
@@ -18,6 +19,7 @@ class CFB_TW_Backpack_Kitbag : B_Kitbag_cbr
 	scopeCurator = 2;
 	displayName = "CADPAT TW Kitbag";
 	author = "Anton Struyk";
+	picture = "\cfb_skins\ui\CADPAT_UI_Icon.paa";
 	
 	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_TW_Backpack_Fast.paa"};
 };

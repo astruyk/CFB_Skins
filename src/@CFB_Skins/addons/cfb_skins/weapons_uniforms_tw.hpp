@@ -4,7 +4,7 @@ class CFB_TW_Uniform : U_B_CombatUniform_mcam
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "CADPAT Combat Uniform";
-	picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+	picture = "\cfb_skins\ui\CADPAT_UI_Icon.paa";
 
 	author = "Anton Struyk";
 
@@ -20,7 +20,7 @@ class CFB_TW_Rolled_Uniform : U_B_CombatUniform_mcam_vest
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "CADPAT Combat Uniform (Rolled Up)";
-	picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+	picture = "\cfb_skins\ui\CADPAT_UI_Icon.paa";
 	author = "Anton Struyk";
 
 	class ItemInfo : ItemInfo
@@ -35,7 +35,7 @@ class CFB_TW_Tshirt_Uniform : U_B_CombatUniform_mcam_tshirt
 	scope = 2;
 	scopeCurator = 2;
 	displayName = "CADPAT Combat Uniform (Tee)";
-	picture = "\A3\characters_f\data\ui\icon_U_B_CombatUniform_mcam_ca.paa";
+	picture = "\cfb_skins\ui\CADPAT_UI_Icon.paa";
 	author = "Anton Struyk";
 
 	class ItemInfo : ItemInfo
