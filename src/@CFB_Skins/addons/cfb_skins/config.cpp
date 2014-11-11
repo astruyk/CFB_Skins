@@ -68,7 +68,20 @@ class CfgPatches
 			"CFB_RCAF_Helo_Crew",
 			"CFB_Helo_Griffon",
 			"CFB_Helo_Griffon_Unarmed",
-			"CFB_Helo_Cyclone"
+			"CFB_Helo_Cyclone",
+			
+			// Rebels
+			"CFB_Rebel_Soldier",
+			"CFB_Rebel_Officer",
+			"CFB_Rebel_TL",
+			"CFB_Rebel_AR",
+			"CFB_Rebel_GL",
+			"CFB_Rebel_GL_RPG",
+			"CFB_Rebel_LAT",
+			"CFB_Rebel_Marksman",
+			"CFB_Rebel_Medic",
+			"CFB_Rebel_AA",
+			"CFB_Rebel_Sniper",
 		};
 	};
 };
@@ -84,6 +97,16 @@ class CfgFactionClasses
 		priority = 8;
 		side = 1; //Blufor
 	};
+	
+	class CFB_Rebel_Faction
+	{
+		displayName = "Rebels";
+		author = "Anton Struyk";
+		icon = "\cfb_skins\factionLogo.paa";
+		flag = "\a3\Data_f\Flags\flag_nato_co.paa";
+		priority = 8;
+		side = 0; // Opfor
+	};
 };
 
 class CfgVehicleClasses
@@ -93,6 +116,8 @@ class CfgVehicleClasses
 	//class CFB_CADPAT_Arctic_VehicleClass { displayName = "CADPAT Arctic"; };
 	class CFB_RCAF_VehicleClass { displayName = "RCAF"; };
 	class CFB_JTF2_VehicleClass { displayName = "JTF2"; }
+	
+	class CFB_Rebel_VehicleClass { displayName = "Insurgents"; }
 };
 
 class CfgVehicles
@@ -100,6 +125,7 @@ class CfgVehicles
 	#include "vehicles_units_tw.hpp"
 	#include "vehicles_units_rcaf.hpp"
 	#include "vehicles_units_jtf2.hpp"
+	#include "vehicles_units_rebels.hpp"
 	#include "vehicles_backpacks_tw.hpp"
 	#include "vehicles_backpacks_jtf2.hpp"
 };
@@ -122,6 +148,15 @@ class cfgWeapons
 
 class CfgGroups
 {
+	class East
+	{
+		side = 0;
+		class CFB_Groups_Rebel
+		{
+			name = "Rebels";
+			#include "groups_rebel.hpp"
+		};
+	};
 	class West
 	{
 		side = 1;
