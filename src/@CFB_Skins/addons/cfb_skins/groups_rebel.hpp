@@ -15,8 +15,8 @@ class CFB_Groups_Rebel_Infantry
 		class Unit5 { side = 0; vehicle = "O_G_Soldier_M_F"; rank = "PRIVATE"; position[] = {15,-15,0}; };
 		class Unit6 { side = 0; vehicle = "O_G_Soldier_AR_F"; rank = "PRIVATE"; position[] = {-15,-15,0}; };
 		class Unit7 { side = 0; vehicle = "O_G_Soldier_LAT_F"; rank = "PRIVATE"; position[] = {20,-20,0}; };
-		class Unit8 { side = 0; vehicle = "O_G_Soldier_A_F"; rank = "PRIVATE"; position[] = {25,-25,0}; };
-		class Unit9 { side = 0; vehicle = "O_G_Soldier_lite_F"; rank = "PRIVATE"; position[] = {-25,-25,0}; };
+		class Unit8 { side = 0; vehicle = "O_G_Soldier_lite_F"; rank = "PRIVATE"; position[] = {-25,-25,0}; };
+		class Unit9 { side = 0; vehicle = "O_G_Soldier_A_F"; rank = "PRIVATE"; position[] = {25,-25,0}; };
 	};
 	
 	class CFB_Groups_Rebel_Rifle_Squad
@@ -100,7 +100,7 @@ class CFB_Groups_Rebel_Infantry
 		name = "Sentry Team";
 		side = 0;
 
-		class Unit1 { side = 0; vehicle = "O_G_Soldier_GL_F"; rank = "PRIVATE"; position[] = {5,-5,0}; };
-		class Unit2 { side = 0; vehicle = "O_G_Soldier_lite_F"; rank = "PRIVATE"; position[] = {-5,-5,0}; };
+		class Unit0 { side = 0; vehicle = "O_G_Soldier_GL_F"; rank = "PRIVATE"; position[] = {0,0,0}; };
+		class Unit1 { side = 0; vehicle = "O_G_Soldier_lite_F"; rank = "PRIVATE"; position[] = {-5,-5,0}; };
 	};
 };
