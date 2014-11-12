@@ -10,7 +10,7 @@ class CFB_Groups_CADPAT_TW
 		class Unit0 { side = 1; vehicle = "CFB_TW_Soldier_TL"; rank = "SERGEANT"; position[] = {0,0,0}; };
 		class Unit1 { side = 1; vehicle = "CFB_TW_Soldier_GL"; rank = "PRIVATE"; position[] = {5,-5,0}; };
 		class Unit2 { side = 1; vehicle = "CFB_TW_Soldier_AR"; rank = "PRIVATE"; position[] = {-5,-5,0}; };
-		class Unit3 { side = 1; vehicle = "CFB_JTF2_Soldier_LAT"; rank = "PRIVATE"; position[] = {10,-10,0}; };
+		class Unit3 { side = 1; vehicle = "CFB_TW_Soldier_LAT"; rank = "PRIVATE"; position[] = {10,-10,0}; };
 		
 		class Unit4 { side = 1; vehicle = "CFB_TW_Soldier_TL"; rank = "CORPORAL"; position[] = {-10,-10,0}; };
 		class Unit5 { side = 1; vehicle = "CFB_TW_Soldier_Medic"; rank = "PRIVATE"; position[] = {15,-15,0}; };
