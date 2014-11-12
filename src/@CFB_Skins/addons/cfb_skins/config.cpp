@@ -32,6 +32,7 @@ class CfgPatches
 		
 		units[] =
 		{
+			// CADPAT TW
 			"CFB_TW_Soldier",
 			"CFB_TW_Soldier_TL",
 			"CFB_TW_Soldier_AR",
@@ -48,6 +49,8 @@ class CfgPatches
 			"CFB_TW_Soldier_AT",
 			"CFB_TW_Soldier_AA",
 			"CFB_TW_Soldier_Engineer",
+			
+			// JTF2
 			"CFB_JTF2_Soldier",
 			"CFB_JTF2_Soldier_TL",
 			"CFB_JTF2_Soldier_AR",
@@ -64,6 +67,8 @@ class CfgPatches
 			"CFB_JTF2_Soldier_AT",
 			"CFB_JTF2_Soldier_AA",
 			"CFB_JTF2_Soldier_Engineer",
+			
+			// RCAF
 			"CFB_RCAF_Helo_Pilot",
 			"CFB_RCAF_Helo_Crew",
 			"CFB_Helo_Griffon",
@@ -74,6 +79,16 @@ class CfgPatches
 			"CFB_Rebel_Officer",
 			"CFB_Rebel_GL_RPG",
 			"CFB_Rebel_Marksman",
+			"CFB_Rebel_GL",
+			"CFB_Rebel_Medic",
+			"CFB_Rebel_AR",
+			"CFB_Rebel_Soldier_Lite",
+			"CFB_Rebel_Marksman_Lite",
+			"CFB_Rebel_LAT",
+			"CFB_Rebel_AmmoBearer",
+			"CFB_Rebel_SL",
+			"CFB_Rebel_Soldier",
+			"CFB_Rebel_TL"
 		};
 	};
 };
@@ -148,11 +163,6 @@ class CfgGroups
 			name = "Rebels";
 			#include "groups_rebel.hpp"
 		};
-		/*class CFB_Groups_Insurgents
-		{
-			name = "Insurgents";
-			#include "groups_insurgents.hpp"
-		};*/
 	};
 	class West
 	{
@@ -163,6 +173,18 @@ class CfgGroups
 			
 			#include "groups_tw.hpp"
 			#include "groups_jtf2.hpp"
+		};
+	};
+};
+
+class CfgFunctions
+{
+	class CFB
+	{
+		class WeaponSwap
+		{
+			file = "\cfb_skins\functions";
+			class hlcWeaponSwap {};
 		};
 	};
 };
