@@ -14,7 +14,7 @@ if (isNil "JTF2_HLC_WeaponSwapData") then
 				]
 			],
 			[
-				["arifle_Mk20C_plain_F", "arifle_TRG21_F", "arifle_TRG20_F"],
+				["arifle_Mk20C_plain_F", "arifle_TRG21_F", "arifle_TRG20_F", "arifle_Mk20_F"],
 				[
 					["hlc_rifle_ak47", "hlc_30Rnd_762x39_b_ak"],
 					["hlc_rifle_akm", "hlc_30Rnd_762x39_b_ak"],
@@ -22,6 +22,12 @@ if (isNil "JTF2_HLC_WeaponSwapData") then
 					["hlc_rifle_aks74", "hlc_30Rnd_545x39_B_AK"],
 					["hlc_rifle_aks74u", "hlc_30Rnd_545x39_B_AK"]
 				] 
+			],
+			[
+				["LMG_Mk200_F"],
+				[
+					["hlc_rifle_rpk","hlc_45Rnd_762x39_m_rpk"]
+				]
 			]
 		];
 };
