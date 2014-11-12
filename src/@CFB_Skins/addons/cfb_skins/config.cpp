@@ -5,9 +5,9 @@ class CfgPatches
 		requiredVersion = 1;
 		author[] = { "Anton Struyk" };
 		authorUrl = "https://github.com/astruyk/";
-		version = 2.0.1;
-		versionStr = "2.0.1";
-		versionAr[] = { 2,0,1 };
+		version = 2.1.0;
+		versionStr = "2.1.0";
+		versionAr[] = { 2,1,0 };
 		requiredAddons[] =
 		{
 			"A3_Characters_F_BLUFOR", // For units

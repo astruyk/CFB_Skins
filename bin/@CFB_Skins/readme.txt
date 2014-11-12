@@ -1,10 +1,21 @@
-Canadian Forces Base Skins V.2.0.1
+Canadian Forces Base Skins
 
 Adds new skins for the base ARMA units inspired by Canadian Armed Forces.
 
 Check out the project at: https://github.com/astruyk/CFB_Skins for more information.
 
 Changelog
+
+2.1.0 - Rebels!
+* Added new 'Rebels' faction to OPFOR with lightly armed zeus-compatible units built from existing ARMA uniforms including:
+  * 13 Kinds of infantry unit
+  * 3 Vehicles (Armed and unarmed technicals, quadbikes)
+  * 7 static weapons (2xHMG, 2xGMG, Mortars, AT, AA)
+* Added groups for 'Rebels' factions:
+  * 8 kinds of infantry group
+  * 2 Vehicle Groups
+  * 3 Mechanized Groups
+* Rebel units will (sometimes) be equipped with AK-47's if the HLC AK mod is detected
 
 2.0.1
 * Populate backpacks for units with appropriate equipment
