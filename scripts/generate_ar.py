@@ -77,6 +77,12 @@ def processGroupLines(line, currentClassName, indentDepth):
 def processBackpackLines(line, currentClassName, indentDepth):
 	# For each TW backpack generate a AR backpack that is identical
 	line = line.replace("CFB_TW_Backpack", "CFB_AR_Backpack");
+	
+	# Replace the texture as well.
+	line = line.replace("CADPAT_TW_Backpack", "CADPAT_AR_Backpack");
+	
+	#Replace the description
+	line = line.replace("CADPAT TW", "CADPAT AR");
 	return line;
 
 def processHeadgearLines(line, currentClassName, indentDepth):

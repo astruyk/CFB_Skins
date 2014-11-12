@@ -6,7 +6,7 @@ class CFB_AR_Uniform : U_B_CombatUniform_mcam
 {
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "CADPAT Combat Uniform";
+	displayName = "CADPAT AR Uniform";
 	picture = "\cfb_skins\ui\CFB_AR_Uniform.paa";
 
 	author = "Anton Struyk";
@@ -22,7 +22,7 @@ class CFB_AR_Rolled_Uniform : U_B_CombatUniform_mcam_vest
 {
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "CADPAT Combat Uniform (Rolled Up)";
+	displayName = "CADPAT AR Uniform (Rolled Up)";
 	picture = "\cfb_skins\ui\CFB_AR_Rolled_Uniform.paa";
 	author = "Anton Struyk";
 
@@ -37,7 +37,7 @@ class CFB_AR_Tshirt_Uniform : U_B_CombatUniform_mcam_tshirt
 {
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "CADPAT Combat Uniform (Tee)";
+	displayName = "CADPAT AR Uniform (Tee)";
 	picture = "\cfb_skins\ui\CFB_AR_Tshirt_Uniform.paa";
 	author = "Anton Struyk";
 

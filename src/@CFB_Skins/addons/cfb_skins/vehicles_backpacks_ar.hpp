@@ -7,11 +7,11 @@ class CFB_AR_Backpack_Assault : B_AssaultPack_cbr
 	side = 1;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "CADPAT TW Assault Backpack";
+	displayName = "CADPAT AR Assault Backpack";
 	author = "Anton Struyk";
 	picture = "\cfb_skins\ui\CFB_AR_Backpack_Assault.paa";
 
-	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_TW_Backpack_Assault.paa"};
+	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_AR_Backpack_Assault.paa"};
 };
 
 // class B_Kitbag_cbr;
@@ -20,11 +20,11 @@ class CFB_AR_Backpack_Kitbag : B_Kitbag_cbr
 	side = 1;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "CADPAT TW Kitbag";
+	displayName = "CADPAT AR Kitbag";
 	author = "Anton Struyk";
 	picture = "\cfb_skins\ui\CFB_AR_Backpack_Kitbag.paa";
 	
-	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_TW_Backpack_Fast.paa"};
+	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_AR_Backpack_Fast.paa"};
 };
 
 class CFB_AR_Backpack_Kitbag_LAT : CFB_AR_Backpack_Kitbag
