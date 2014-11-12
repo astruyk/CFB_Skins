@@ -50,6 +50,24 @@ class CfgPatches
 			"CFB_TW_Soldier_AA",
 			"CFB_TW_Soldier_Engineer",
 			
+			// CADPAT AR
+			"CFB_AR_Soldier",
+			"CFB_AR_Soldier_TL",
+			"CFB_AR_Soldier_AR",
+			"CFB_AR_Soldier_MMG",
+			"CFB_AR_Soldier_Marksman",
+			"CFB_AR_Soldier_GL",
+			"CFB_AR_Soldier_Medic",
+			"CFB_AR_Soldier_LAT",
+			"CFB_AR_Soldier_AmmoBearer",
+			"CFB_AR_Soldier_AmmoBearer_AT",
+			"CFB_AR_Soldier_AmmoBearer_AA",
+			"CFB_AR_Soldier_AmmoBearer_AR",
+			"CFB_AR_Soldier_AmmoBearer_MMG",
+			"CFB_AR_Soldier_AT",
+			"CFB_AR_Soldier_AA",
+			"CFB_AR_Soldier_Engineer",
+			
 			// JTF2
 			"CFB_JTF2_Soldier",
 			"CFB_JTF2_Soldier_TL",
@@ -142,10 +160,12 @@ class CfgVehicleClasses
 class CfgVehicles
 {
 	#include "vehicles_units_tw.hpp"
+	#include "vehicles_units_ar.hpp"
 	#include "vehicles_units_rcaf.hpp"
 	#include "vehicles_units_jtf2.hpp"
 	#include "vehicles_units_rebels.hpp"
 	#include "vehicles_backpacks_tw.hpp"
+	#include "vehicles_backpacks_ar.hpp"
 	#include "vehicles_backpacks_jtf2.hpp"
 };
  
@@ -158,11 +178,14 @@ class cfgWeapons
 	//#include "weapons_optics.hpp"
 	#include "weapons_rifles.hpp"
 	#include "weapons_uniforms_tw.hpp"
+	#include "weapons_uniforms_ar.hpp"
 	#include "weapons_uniforms_rcaf.hpp"
 	#include "weapons_uniforms_jtf2.hpp"
 	#include "weapons_headgear_tw.hpp"
+	#include "weapons_headgear_ar.hpp"
 	#include "weapons_headgear_jtf2.hpp"
 	#include "weapons_vests_tw.hpp"
+	#include "weapons_vests_ar.hpp"
 };
 
 class CfgGroups
