@@ -88,7 +88,17 @@ class CfgPatches
 			"CFB_Rebel_AmmoBearer",
 			"CFB_Rebel_SL",
 			"CFB_Rebel_Soldier",
-			"CFB_Rebel_TL"
+			"CFB_Rebel_TL",
+			"CFB_Rebel_Technical",
+			"CFB_Rebel_Technical_Armed",
+			"CFB_Rebel_Quadbike",
+			"CFB_Rebel_HMG",
+			"CFB_Rebel_HMG_High",
+			"CFB_Rebel_GMG",
+			"CFB_Rebel_GMG_High",
+			"CFB_Rebel_Mortar",
+			"CFB_Rebel_Static_AA",
+			"CFB_Rebel_Static_AT",
 		};
 	};
 };
@@ -124,7 +134,9 @@ class CfgVehicleClasses
 	class CFB_RCAF_VehicleClass { displayName = "RCAF"; };
 	class CFB_JTF2_VehicleClass { displayName = "JTF2"; }
 	
-	class CFB_Rebel_VehicleClass { displayName = "Insurgents"; }
+	class CFB_Rebel_VehicleClass { displayName = "Infantry"; }
+	class CFB_Rebel_Vehicles_VehicleClass { displayName = "Vehicles"; }
+	class CFB_Rebel_Static_VehicleClass { displayName = "Static Weapons"; }
 };
 
 class CfgVehicles

@@ -42,7 +42,6 @@ class CFB_Helo_Griffon : I_Heli_light_03_F
 class I_Heli_light_03_unarmed_F;
 class CFB_Helo_Griffon_Unarmed : I_Heli_light_03_unarmed_F
 {
-	_generalMacro  = "CFB_Helo_Griffon_Unarmed";
 	side = 1;
 	scope = 2;
 	scopeCurator = 2;
@@ -56,7 +55,6 @@ class CFB_Helo_Griffon_Unarmed : I_Heli_light_03_unarmed_F
 class I_Heli_Transport_02_F;
 class CFB_Helo_Cyclone : I_Heli_Transport_02_F
 {
-	_generalMacro  = "CFB_Helo_Cyclone";
 	side = 1;
 	scope = 2;
 	scopeCurator = 2;
