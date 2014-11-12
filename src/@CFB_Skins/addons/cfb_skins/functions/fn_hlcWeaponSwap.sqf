@@ -12,7 +12,7 @@ if (isNil "JTF2_HLC_WeaponSwapData") then
 				[ // ["gunName", "Ammo"] to replace with (randomly chosen)
 					["hlc_rifle_aks74u", "hlc_30Rnd_545x39_B_AK"]
 				],
-				[1, 2] // [chance to replace, ammo factor]
+				[1, 2] // [% chance to replace, ammo factor]
 			],
 			[
 				["arifle_Mk20C_plain_F", "arifle_TRG21_F", "arifle_TRG20_F", "arifle_Mk20_F"],
