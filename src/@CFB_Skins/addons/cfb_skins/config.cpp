@@ -147,8 +147,8 @@ class CfgFactionClasses
 class CfgVehicleClasses
 {
 	class CFB_TW_VehicleClass { displayName = "CADPAT TW"; };
-	//class CFB_CADPAT_AR_VehicleClass { displayName = "CADPAT AR"; };
-	//class CFB_CADPAT_Arctic_VehicleClass { displayName = "CADPAT Arctic"; };
+	class CFB_AR_VehicleClass { displayName = "CADPAT AR"; };
+	//class CFB_Arctic_VehicleClass { displayName = "CADPAT Arctic"; };
 	class CFB_RCAF_VehicleClass { displayName = "RCAF"; };
 	class CFB_JTF2_VehicleClass { displayName = "JTF2"; }
 	
