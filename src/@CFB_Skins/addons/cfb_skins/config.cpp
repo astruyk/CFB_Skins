@@ -207,6 +207,7 @@ class CfgGroups
 			name = "Canadian Armed Forces";
 			
 			#include "groups_tw.hpp"
+			#include "groups_ar.hpp"
 			#include "groups_jtf2.hpp"
 		};
 	};
