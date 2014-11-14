@@ -6,6 +6,9 @@ Check out the project at: https://github.com/astruyk/CFB_Skins for more informat
 
 Changelog
 
+2.2.0 - CADPAT AR
+* Added CADPAT AR variants for all existing CADPAT TW units, equipment, and groups.
+
 2.1.0 - Rebels!
 * Added new 'Rebels' faction to OPFOR with lightly armed zeus-compatible units built from existing ARMA uniforms including:
   * 13 Kinds of infantry unit
