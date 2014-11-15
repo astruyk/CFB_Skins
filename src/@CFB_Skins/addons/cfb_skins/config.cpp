@@ -117,6 +117,10 @@ class CfgPatches
 			"CFB_Rebel_Mortar",
 			"CFB_Rebel_Static_AA",
 			"CFB_Rebel_Static_AT",
+			
+			// Vehicles
+			"CFB_LSSV_Olive",
+			"CFB_LSSV_Olive_Armed",
 		};
 	};
 };
@@ -150,7 +154,8 @@ class CfgVehicleClasses
 	class CFB_AR_VehicleClass { displayName = "CADPAT AR"; };
 	//class CFB_Arctic_VehicleClass { displayName = "CADPAT Arctic"; };
 	class CFB_RCAF_VehicleClass { displayName = "RCAF"; };
-	class CFB_JTF2_VehicleClass { displayName = "JTF2"; }
+	class CFB_JTF2_VehicleClass { displayName = "JTF2"; };
+	class CFB_Utility_VehicleClass { displayName = "Utility Vehicles"; };
 	
 	class CFB_Rebel_VehicleClass { displayName = "Infantry"; }
 	class CFB_Rebel_Vehicles_VehicleClass { displayName = "Vehicles"; }
@@ -167,6 +172,7 @@ class CfgVehicles
 	#include "vehicles_backpacks_tw.hpp"
 	#include "vehicles_backpacks_ar.hpp"
 	#include "vehicles_backpacks_jtf2.hpp"
+	#include "vehicles_ground.hpp"
 };
  
 class cfgWeapons
