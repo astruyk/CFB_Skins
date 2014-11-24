@@ -24,6 +24,9 @@ class CfgPatches
 			"CFB_TW_Uniform",
 			"CFB_TW_Rolled_Uniform",
 			"CFB_TW_Tshirt_Uniform",
+			"CFB_AR_Uniform",
+			"CFB_AR_Rolled_Uniform",
+			"CFB_AR_Tshirt_Uniform",
 			"CFB_JTF2_Uniform",
 			"CFB_JTF2_Rolled_Uniform",
 			"CFB_JTF2_Tshirt_Uniform"
