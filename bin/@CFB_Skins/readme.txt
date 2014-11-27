@@ -6,6 +6,11 @@ Check out the project at: https://github.com/astruyk/CFB_Skins for more informat
 
 Changelog
 
+2.3.0 - LSSV's
+* Added unarmed Light Service Support Vehicles (LSSV).
+* Added armed Light Service Support Vehicles (LSSV).
+* Fix issue where AR uniforms weren't showing when adding items to Arsenal through Zeus
+
 2.2.0 - CADPAT AR
 * Added CADPAT AR variants for all existing CADPAT TW units, equipment, and groups.
 
