@@ -6,6 +6,10 @@ Check out the project at: https://github.com/astruyk/CFB_Skins for more informat
 
 Changelog
 
+2.3.1
+* CADPAT and JTF2 items now show up in Zeus when editing ammo boxes.
+* Rebels will now also attempt to switch to using AK's + RPK's from @CUP mod if HLC isn't present.
+
 2.3.0 - LSSV's
 * Added unarmed Light Service Support Vehicles (LSSV).
 * Added armed Light Service Support Vehicles (LSSV).
