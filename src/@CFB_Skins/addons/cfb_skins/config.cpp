@@ -21,6 +21,7 @@ class CfgPatches
 		
 		weapons[] =
 		{
+			// Uniforms
 			"CFB_TW_Uniform",
 			"CFB_TW_Rolled_Uniform",
 			"CFB_TW_Tshirt_Uniform",
@@ -29,7 +30,29 @@ class CfgPatches
 			"CFB_AR_Tshirt_Uniform",
 			"CFB_JTF2_Uniform",
 			"CFB_JTF2_Rolled_Uniform",
-			"CFB_JTF2_Tshirt_Uniform"
+			"CFB_JTF2_Tshirt_Uniform",
+
+			// Vests
+			"CFB_TW_Vest_Tactical",
+			"CFB_TW_Vest_PlateCarrier1",
+			"CFB_TW_Vest_PlateCarrier2",
+			"CFB_AR_Vest_Tactical",
+			"CFB_AR_Vest_PlateCarrier1",
+			"CFB_AR_Vest_PlateCarrier2",
+			
+			// Headgear
+			"CFB_TW_Helmet",
+			"CFB_TW_Boonie",
+			"CFB_TW_Patrol",
+			"CFB_AR_Helmet",
+			"CFB_AR_Boonie",
+			"CFB_AR_Patrol",
+			"CFB_JTF2_Helmet",
+			
+			// Weapons
+			// ... TODO
+			
+			// Optics
 			//"CFB_CADPAT_C97A3_Sight"
 		};
 		
@@ -124,6 +147,12 @@ class CfgPatches
 			// Vehicles
 			"CFB_LSSV_Olive",
 			"CFB_LSSV_Olive_Armed",
+
+			// Backpacks
+			"CFB_TW_Backpack_Assault",
+			"CFB_TW_Backpack_Kitbag",
+			"CFB_AR_Backpack_Assault",
+			"CFB_AR_Backpack_Kitbag",
 		};
 	};
 };
