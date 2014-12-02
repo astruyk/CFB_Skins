@@ -1,7 +1,7 @@
 private ["_unit"];
 _unit = _this select 0;
 if (not local _unit) exitWith {};
-if (not isClass(configFile >> "CfgPatches" >> "hlcweapons_aks")) exitWith {};
+if (isPlayer _unit) exitWith {};
 
 if (isNil "JTF2_HLC_WeaponSwapData") then
 {
@@ -34,6 +34,60 @@ if (isNil "JTF2_HLC_WeaponSwapData") then
 			]
 		];
 };
+
+if (isNil "JTF2_CUP_WeaponSwapData") then
+{
+	JTF2_CUP_WeaponSwapData =
+		[
+			[
+				["hgun_PDW2000_F"],
+				[
+					["CUP_arifle_AKS74U", "CUP_30Rnd_545x39_AK_M"],
+					["CUP_arifle_AKS74UN_kobra_snds", "CUP_30Rnd_545x39_AK_M"]
+				],
+				[1, 2]
+			],
+			[
+				["arifle_Mk20C_plain_F", "arifle_TRG21_F", "arifle_TRG20_F", "arifle_Mk20_F"],
+				[
+					["CUP_arifle_AK74", "CUP_30Rnd_545x39_AK_M"],
+					["CUP_arifle_AK107", "CUP_30Rnd_545x39_AK_M"],
+					["CUP_arifle_AKS74", "CUP_30Rnd_545x39_AK_M"],
+					["CUP_arifle_AKS74U", "CUP_30Rnd_545x39_AK_M"],
+					["CUP_arifle_AKM", "CUP_30Rnd_762x39_AK47_M"],
+					["CUP_arifle_AKS", "CUP_30Rnd_762x39_AK47_M"],
+					["CUP_arifle_AKS_Gold", "CUP_30Rnd_762x39_AK47_M"],
+					["CUP_arifle_AKS74_kobra", "CUP_30Rnd_545x39_AK_M"],
+					["CUP_arifle_AKS74_pso", "CUP_30Rnd_545x39_AK_M"],
+					["CUP_arifle_Sa58P", "CUP_30Rnd_Sa58_M"],
+					["CUP_arifle_Sa58V", "CUP_30Rnd_Sa58_M"]
+				],
+				[0.9, 1]
+			],
+			[
+				["LMG_Mk200_F"],
+				[
+					["CUP_lmg_PKM","CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"],
+					["CUP_lmg_Pecheneg_PScope","CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M"],
+					["CUP_lmg_UK59", "CUP_50Rnd_UK59_762x54R_Tracer"]
+				],
+				[0.9, 2]
+			]
+		];
+};
+
+_weaponSwapData = [];
+if (isClass(configFile >> "CfgPatches" >> "hlcweapons_aks")) then
+{
+	_weaponSwapData = JTF2_HLC_WeaponSwapData;
+};
+if ((count _weaponSwapData == 0) && isClass(configFile >> "CfgPatches" >> "CUP_Weapons_WeaponsCore")) then
+{
+	_weaponSwapData = JTF2_CUP_WeaponSwapData;
+};
+
+// If we didn't assign any data, we don't want to do anything.
+if (count _weaponSwapData == 0) exitWith {};
 
 _originalWeapon = currentWeapon _unit;
 {
@@ -79,4 +133,4 @@ _originalWeapon = currentWeapon _unit;
 	} forEach _weaponsToReplace;
 	
 	if (_gunWasMatch) exitWith {};
-} forEach JTF2_HLC_WeaponSwapData;
+} forEach _weaponSwapData;
