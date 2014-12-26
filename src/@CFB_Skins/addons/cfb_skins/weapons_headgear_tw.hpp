@@ -36,3 +36,16 @@ class CFB_TW_Patrol : H_MilCap_gry
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_TW_Hat_Patrol.paa"};
 };
+
+class H_HelmetB;
+class CFB_TW_Helmet_ECH : H_HelmetB
+{
+	side = 1;
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "CADPAT TW ECH Helmet";
+	picture = "\cfb_skins\ui\CFB_TW_Helmet_ECH.paa";
+	author = "Anton Struyk";
+	hiddenSelections[] = {"camo"};
+	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_TW_Helmet_ECH.paa"};
+};
