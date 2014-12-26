@@ -64,3 +64,29 @@ class CFB_Helo_Cyclone : I_Heli_Transport_02_F
 	crew = "CFB_RCAF_Helo_Pilot";
 	hiddenSelectionsTextures[] = { "\cfb_skins\CH148_0.paa", "\cfb_skins\CH148_1.paa", "\cfb_skins\CH148_2.paa"};
 };
+
+class B_Heli_Transport_03_F;
+class CFB_Helo_Chinook : B_Heli_Transport_03_F
+{
+	side = 1;
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "CH-147 Chinook";
+	faction = "CFB_Base_Faction";
+	vehicleClass = "CFB_RCAF_VehicleClass";
+	crew = "CFB_RCAF_Helo_Pilot";
+	hiddenSelectionsTextures[] = { "\cfb_skins\CH147_0.paa", "\cfb_skins\CH147_1.paa" };
+};
+
+class B_Heli_Transport_03_unarmed_F;
+class CFB_Helo_Chinook_Unarmed : B_Heli_Transport_03_unarmed_F
+{
+	side = 1;
+	scope = 2;
+	scopeCurator = 2;
+	displayName = "CH-147 Chinook (Unarmed)";
+	faction = "CFB_Base_Faction";
+	vehicleClass = "CFB_RCAF_VehicleClass";
+	crew = "CFB_RCAF_Helo_Pilot";
+	hiddenSelectionsTextures[] = { "\cfb_skins\CH147_0.paa", "\cfb_skins\CH147_1.paa" };
+};

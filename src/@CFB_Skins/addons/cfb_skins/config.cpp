@@ -118,6 +118,8 @@ class CfgPatches
 			"CFB_Helo_Griffon",
 			"CFB_Helo_Griffon_Unarmed",
 			"CFB_Helo_Cyclone",
+			"CFB_Helo_Chinook",
+			"CFB_Helo_Chinook_Unarmed",
 			
 			// Rebels
 			"CFB_Rebel_Officer",
