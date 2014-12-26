@@ -42,9 +42,11 @@ class CfgPatches
 			
 			// Headgear
 			"CFB_TW_Helmet",
+			"CFB_TW_Helmet_ECH",
 			"CFB_TW_Boonie",
 			"CFB_TW_Patrol",
 			"CFB_AR_Helmet",
+			"CFB_AR_Helmet_ECH",
 			"CFB_AR_Boonie",
 			"CFB_AR_Patrol",
 			"CFB_JTF2_Helmet",
