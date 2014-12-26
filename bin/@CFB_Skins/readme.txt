@@ -5,6 +5,9 @@ Adds new skins for the base ARMA units inspired by Canadian Armed Forces.
 Check out the project at: https://github.com/astruyk/CFB_Skins for more information.
 
 Changelog
+2.4.0
+* Add 2 variants of the CH-147 Chinook (Armed & Unarmed)
+* Add CADPAT TW and CADPAT AR variants of the ECH helmet
 
 2.3.1
 * CADPAT and JTF2 items now show up in Zeus when editing ammo boxes.
