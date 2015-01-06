@@ -235,16 +235,25 @@ class CfgGroups
 	class East
 	{
 		side = 0;
-		class CFB_Groups_Rebel
+		class CFB_Rebel_Faction
 		{
 			name = "Rebels";
-			#include "groups_rebel.hpp"
+			class Infantry
+			{
+				name = "Infantry";
+				#include "groups_rebel_infantry.hpp"
+			};
+			class Motorized
+			{
+				name = "Motorized";
+				#include "groups_rebel_motorized.hpp"
+			};
 		};
 	};
 	class West
 	{
 		side = 1;
-		class CFB_Groups
+		class CFB_Base_Faction
 		{
 			name = "Canadian Armed Forces";
 			
