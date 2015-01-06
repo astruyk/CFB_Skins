@@ -3,7 +3,7 @@ class CFB_Rebel_Officer : O_G_officer_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_VehicleClass";
 	displayName = "Officer";
 	class EventHandlers
@@ -24,7 +24,7 @@ class CFB_Rebel_GL_RPG : O_G_Soldier_LAT_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_VehicleClass";
 	displayName = "Grenadier (RPG)";
 	class EventHandlers
@@ -46,7 +46,7 @@ class CFB_Rebel_Marksman : O_G_Soldier_M_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_VehicleClass";
 	displayName = "Marksman";
 	class EventHandlers
@@ -67,7 +67,7 @@ class CFB_Rebel_GL : O_G_Soldier_GL_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_VehicleClass";
 	class EventHandlers
 	{
@@ -80,7 +80,7 @@ class CFB_Rebel_Medic : O_G_medic_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_VehicleClass";
 	class EventHandlers
 	{
@@ -93,7 +93,7 @@ class CFB_Rebel_AR : O_G_Soldier_AR_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_VehicleClass";
 	class EventHandlers
 	{
@@ -106,7 +106,7 @@ class CFB_Rebel_Soldier_Lite : O_G_Soldier_lite_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_VehicleClass";
 	class EventHandlers
 	{
@@ -119,7 +119,7 @@ class CFB_Rebel_Marksman_Lite : O_G_Soldier_M_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_VehicleClass";
 	class EventHandlers
 	{
@@ -132,7 +132,7 @@ class CFB_Rebel_LAT : O_G_Soldier_LAT_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_VehicleClass";
 	class EventHandlers
 	{
@@ -145,7 +145,7 @@ class CFB_Rebel_AmmoBearer : O_G_Soldier_A_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_VehicleClass";
 	class EventHandlers
 	{
@@ -158,7 +158,7 @@ class CFB_Rebel_SL : O_G_Soldier_SL_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_VehicleClass";
 	class EventHandlers
 	{
@@ -171,7 +171,7 @@ class CFB_Rebel_Soldier : O_G_Soldier_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_VehicleClass";
 	class EventHandlers
 	{
@@ -184,7 +184,7 @@ class CFB_Rebel_TL : O_G_Soldier_TL_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_VehicleClass";
 	class EventHandlers
 	{
@@ -197,7 +197,7 @@ class CFB_Rebel_Technical : O_G_Offroad_01_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_Vehicles_VehicleClass";
 	crew = "CFB_Rebel_Soldier";
 };
@@ -207,7 +207,7 @@ class CFB_Rebel_Technical_Armed : O_G_Offroad_01_armed_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_Vehicles_VehicleClass";
 	crew = "CFB_Rebel_Soldier";
 };
@@ -217,7 +217,7 @@ class CFB_Rebel_Quadbike : O_Quadbike_01_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_Vehicles_VehicleClass";
 	crew = "CFB_Rebel_Soldier";
 };
@@ -227,7 +227,7 @@ class CFB_Rebel_HMG : O_HMG_01_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_Static_VehicleClass";
 	crew = "CFB_Rebel_Soldier";
 };
@@ -237,7 +237,7 @@ class CFB_Rebel_HMG_High : O_HMG_01_high_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_Static_VehicleClass";
 	crew = "CFB_Rebel_Soldier";
 };
@@ -247,7 +247,7 @@ class CFB_Rebel_GMG : O_GMG_01_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_Static_VehicleClass";
 	crew = "CFB_Rebel_Soldier";
 };
@@ -257,7 +257,7 @@ class CFB_Rebel_GMG_High : O_GMG_01_high_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_Static_VehicleClass";
 	crew = "CFB_Rebel_Soldier";
 };
@@ -267,7 +267,7 @@ class CFB_Rebel_Mortar : O_Mortar_01_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_Static_VehicleClass";
 	crew = "CFB_Rebel_Soldier";
 };
@@ -277,7 +277,7 @@ class CFB_Rebel_Static_AA : O_static_AA_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_Static_VehicleClass";
 	crew = "CFB_Rebel_Soldier";
 };
@@ -287,7 +287,7 @@ class CFB_Rebel_Static_AT : O_static_AT_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	vehicleClass = "CFB_Rebel_Static_VehicleClass";
 	crew = "CFB_Rebel_Soldier";
 };

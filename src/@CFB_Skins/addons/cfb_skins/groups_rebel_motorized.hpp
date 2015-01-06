@@ -1,6 +1,6 @@
 class CFB_Groups_Rebel_Mobile_Scouts
 {
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	name = "Mobile Scouts";
 	side = 0;
 	
@@ -10,7 +10,7 @@ class CFB_Groups_Rebel_Mobile_Scouts
 
 class CFB_Groups_Rebel_Motorized_Rifles
 {
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	name = "Mounted Rifles";
 	side = 0;
 	
@@ -23,7 +23,7 @@ class CFB_Groups_Rebel_Motorized_Rifles
 
 class CFB_Groups_Rebel_Mechanized_Attack_Group
 {
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	name = "Mounted Attack Group";
 	side = 0;
 	
@@ -38,7 +38,7 @@ class CFB_Groups_Rebel_Mechanized_Attack_Group
 
 class CFB_Groups_Rebel_Technical_Patrol
 {
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	name = "Technicals (2)";
 	side = 0;
 	
@@ -48,7 +48,7 @@ class CFB_Groups_Rebel_Technical_Patrol
 
 class CFB_Groups_Rebel_Technical_Group
 {
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	name = "Technicals (3)";
 	side = 0;
 	

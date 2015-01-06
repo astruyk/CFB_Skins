@@ -173,7 +173,7 @@ class CfgFactionClasses
 		side = 1; //Blufor
 	};
 	
-	class CFB_Rebel_Faction
+	class CFB_Rebels
 	{
 		displayName = "Rebels";
 		author = "Anton Struyk";
@@ -235,7 +235,7 @@ class CfgGroups
 	class East
 	{
 		side = 0;
-		class CFB_Rebel_Faction
+		class CFB_Rebels
 		{
 			name = "Rebels";
 			class Infantry

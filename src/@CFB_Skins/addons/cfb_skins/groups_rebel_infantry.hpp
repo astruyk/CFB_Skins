@@ -1,6 +1,6 @@
 class CFB_Groups_Rebel_Assault_Squad
 {
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	name = "Assault Squad (10)";
 	side = 0;
 
@@ -18,7 +18,7 @@ class CFB_Groups_Rebel_Assault_Squad
 
 class CFB_Groups_Rebel_Rifle_Squad
 {
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	name = "Rifle Squad (8)";
 	side = 0;
 
@@ -34,7 +34,7 @@ class CFB_Groups_Rebel_Rifle_Squad
 
 class CFB_Groups_Rebel_Fireteam_A
 {
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	name = "Fireteam A";
 	side = 0;
 
@@ -47,7 +47,7 @@ class CFB_Groups_Rebel_Fireteam_A
 
 class CFB_Groups_Rebel_Fireteam_B
 {
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	name = "Fireteam B";
 	side = 0;
 
@@ -60,7 +60,7 @@ class CFB_Groups_Rebel_Fireteam_B
 
 class CFB_Groups_Rebel_Scout
 {
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	name = "Scout Team";
 	side = 0;
 
@@ -71,7 +71,7 @@ class CFB_Groups_Rebel_Scout
 
 class CFB_Groups_Rebel_RPG
 {
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	name = "RPG Grenadier Team";
 	side = 0;
 
@@ -82,7 +82,7 @@ class CFB_Groups_Rebel_RPG
 
 class CFB_Groups_Rebel_Sniper
 {
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	name = "Sniper Team";
 	side = 0;
 
@@ -93,7 +93,7 @@ class CFB_Groups_Rebel_Sniper
 
 class CFB_Groups_Rebel_Sentry
 {
-	faction = "CFB_Rebel_Faction";
+	faction = "CFB_Rebels";
 	name = "Sentry Team";
 	side = 0;
 
