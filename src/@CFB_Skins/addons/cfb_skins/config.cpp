@@ -271,6 +271,7 @@ class CfgGroups
 			name = "Canadian Armed Forces (TW)";
 			class Infantry
 			{
+				name = "Infantry";
 				#include "groups_tw_infantry.hpp"
 			};
 		};
@@ -279,6 +280,7 @@ class CfgGroups
 			name = "Canadian Armed Forces (AR)";
 			class Infantry
 			{
+				name = "Infantry";
 				#include "groups_ar_infantry.hpp"
 			};
 		};
@@ -287,6 +289,7 @@ class CfgGroups
 			name = "Canadian Special Operations Forces Command";
 			class Infantry
 			{
+				name = "Infantry";
 				#include "groups_jtf2_infantry.hpp"
 			};
 		};
