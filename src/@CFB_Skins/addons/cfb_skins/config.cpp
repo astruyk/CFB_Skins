@@ -163,9 +163,39 @@ class CfgPatches
 
 class CfgFactionClasses
 {
-	class CFB_Base_Faction
+	class CFB_CAF_TW
 	{
-		displayName = "Canadian Armed Forces";
+		displayName = "Canadian Armed Forces (TW)";
+		author = "Anton Struyk";
+		icon = "\cfb_skins\factionLogo.paa";
+		flag = "\a3\Data_f\Flags\flag_nato_co.paa";
+		priority = 8;
+		side = 1; //Blufor
+	};
+	
+	class CFB_CAF_AR
+	{
+		displayName = "Canadian Armed Forces (AR)";
+		author = "Anton Struyk";
+		icon = "\cfb_skins\factionLogo.paa";
+		flag = "\a3\Data_f\Flags\flag_nato_co.paa";
+		priority = 8;
+		side = 1; //Blufor
+	};
+	
+	class CFB_CANSOFCOM
+	{
+		displayName = "Canadian Special Operations Forces Command";
+		author = "Anton Struyk";
+		icon = "\cfb_skins\factionLogo.paa";
+		flag = "\a3\Data_f\Flags\flag_nato_co.paa";
+		priority = 8;
+		side = 1; //Blufor
+	};
+	
+	class CFB_RCAF
+	{
+		displayName = "Royal Canadian Air Force";
 		author = "Anton Struyk";
 		icon = "\cfb_skins\factionLogo.paa";
 		flag = "\a3\Data_f\Flags\flag_nato_co.paa";
@@ -186,12 +216,9 @@ class CfgFactionClasses
 
 class CfgVehicleClasses
 {
-	class CFB_TW_VehicleClass { displayName = "CADPAT TW"; };
-	class CFB_AR_VehicleClass { displayName = "CADPAT AR"; };
-	//class CFB_Arctic_VehicleClass { displayName = "CADPAT Arctic"; };
+	class CFB_Infantry_VehicleClass { displayName = "Infantry"; };
 	class CFB_RCAF_VehicleClass { displayName = "RCAF"; };
-	class CFB_JTF2_VehicleClass { displayName = "JTF2"; };
-	class CFB_Utility_VehicleClass { displayName = "Utility Vehicles"; };
+	class CFB_Utility_VehicleClass { displayName = "Vehicles"; };
 	
 	class CFB_Rebel_VehicleClass { displayName = "Infantry"; }
 	class CFB_Rebel_Vehicles_VehicleClass { displayName = "Vehicles"; }
@@ -232,6 +259,38 @@ class cfgWeapons
 
 class CfgGroups
 {
+	class West
+	{
+		side = 1;
+		class CFB_CAF_TW
+		{
+			name = "Canadian Armed Forces (TW)";
+			class Infantry
+			{
+				#include "groups_tw_infantry.hpp"
+			};
+		};
+		class CFB_CAF_AR
+		{
+			name = "Canadian Armed Forces (AR)";
+			class Infantry
+			{
+				#include "groups_ar_infantry.hpp"
+			};
+		};
+		class CFB_CANSOFCOM
+		{
+			name = "Canadian Special Operations Forces Command";
+			class Infantry
+			{
+				#include "groups_jtf2_infantry.hpp"
+			};
+		};
+		class CFB_RCAF
+		{
+			name = "Royal Canadian Air Force";
+		};
+	};
 	class East
 	{
 		side = 0;
@@ -248,18 +307,6 @@ class CfgGroups
 				name = "Motorized";
 				#include "groups_rebel_motorized.hpp"
 			};
-		};
-	};
-	class West
-	{
-		side = 1;
-		class CFB_Base_Faction
-		{
-			name = "Canadian Armed Forces";
-			
-			#include "groups_tw.hpp"
-			#include "groups_ar.hpp"
-			#include "groups_jtf2.hpp"
 		};
 	};
 };

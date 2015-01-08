@@ -36,8 +36,8 @@ def processUnitLines(line, currentClassName, indentDepth):
 	# Transform the base class name from a TW solder to a JTF2 soldier
 	line = line.replace("CFB_TW_Soldier", "CFB_JTF2_Soldier");
 	
-	# Change the base vehicle class so they show up in the JTF2 section
-	line = line.replace("CFB_TW_VehicleClass", "CFB_JTF2_VehicleClass");
+	# Change the base vehicle class so they show up in the JTF2 faction
+	line = line.replace("CFB_CAF_TW", "CFB_CANSOFCOM");
 	
 	# Map the uniforms from TW -> JTF2. Also make sure the skin file is selected correctly.
 	line = line.replace("CFB_TW_Uniform", "CFB_JTF2_Uniform");
@@ -75,8 +75,8 @@ def processGroupLines(line, currentClassName, indentDepth):
 	# Transform the base class name from TW groups to JTF2 groups
 	line = line.replace("CFB_Groups_CADPAT_TW", "CFB_Groups_JTF2");
 	
-	# Change the section names
-	line = line.replace("Infantry (CADPAT TW)", "Infantry (JTF2)");
+	# Define these groups in the right faction
+	line = line.replace("CFB_CAF_TW", "CFB_CAF_AR");
 	
 	# Change the names of the units
 	line = line.replace("CFB_TW_Soldier", "CFB_JTF2_Soldier");
@@ -105,5 +105,5 @@ def processBackpackLines(line, currentClassName, indentDepth):
 	return line;
 
 processFile("../src/@CFB_Skins/addons/cfb_skins/vehicles_units_tw.hpp", "../src/@CFB_Skins/addons/cfb_skins/vehicles_units_jtf2.hpp", processUnitLines);
-processFile("../src/@CFB_Skins/addons/cfb_skins/groups_tw.hpp", "../src/@CFB_Skins/addons/cfb_skins/groups_jtf2.hpp", processGroupLines);
+processFile("../src/@CFB_Skins/addons/cfb_skins/groups_tw_infantry.hpp", "../src/@CFB_Skins/addons/cfb_skins/groups_jtf2_infantry.hpp", processGroupLines);
 processFile("../src/@CFB_Skins/addons/cfb_skins/vehicles_backpacks_tw.hpp", "../src/@CFB_Skins/addons/cfb_skins/vehicles_backpacks_jtf2.hpp", processBackpackLines);

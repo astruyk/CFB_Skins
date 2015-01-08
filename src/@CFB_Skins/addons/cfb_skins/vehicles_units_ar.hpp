@@ -6,8 +6,8 @@ class CFB_AR_Soldier : B_Soldier_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Base_Faction";
-	vehicleClass = "CFB_AR_VehicleClass";
+	faction = "CFB_CAF_AR";
+	vehicleClass = "CFB_Infantry_VehicleClass";
 	displayName = "Rifleman";
 	uniformClass = "CFB_AR_Uniform";
 	backpack = "CFB_AR_Backpack_Assault_Rifleman";
@@ -23,8 +23,8 @@ class CFB_AR_Soldier_TL : B_Soldier_TL_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Base_Faction";
-	vehicleClass = "CFB_AR_VehicleClass";
+	faction = "CFB_CAF_AR";
+	vehicleClass = "CFB_Infantry_VehicleClass";
 	displayName = "Section Leader";
 	uniformClass = "CFB_AR_Rolled_Uniform";
 	backpack = "CFB_AR_Backpack_Assault_GL";
@@ -40,8 +40,8 @@ class CFB_AR_Soldier_AR : B_soldier_AR_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Base_Faction";
-	vehicleClass = "CFB_AR_VehicleClass";
+	faction = "CFB_CAF_AR";
+	vehicleClass = "CFB_Infantry_VehicleClass";
 	displayName = "Autorifleman";
 	uniformClass = "CFB_AR_Rolled_Uniform";
 	backpack = "CFB_AR_Backpack_Assault_AR";
@@ -69,8 +69,8 @@ class CFB_AR_Soldier_Marksman : B_soldier_M_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Base_Faction";
-	vehicleClass = "CFB_AR_VehicleClass";
+	faction = "CFB_CAF_AR";
+	vehicleClass = "CFB_Infantry_VehicleClass";
 	displayName = "Marksman";
 	uniformClass = "CFB_AR_Rolled_Uniform";
 	backpack = "CFB_AR_Backpack_Assault_Rifleman";
@@ -86,8 +86,8 @@ class CFB_AR_Soldier_GL : B_Soldier_GL_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Base_Faction";
-	vehicleClass = "CFB_AR_VehicleClass";
+	faction = "CFB_CAF_AR";
+	vehicleClass = "CFB_Infantry_VehicleClass";
 	displayName = "Grenadier";
 	uniformClass = "CFB_AR_Uniform";
 	backpack = "CFB_AR_Backpack_Assault_GL";
@@ -103,8 +103,8 @@ class CFB_AR_Soldier_Medic : B_medic_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Base_Faction";
-	vehicleClass = "CFB_AR_VehicleClass";
+	faction = "CFB_CAF_AR";
+	vehicleClass = "CFB_Infantry_VehicleClass";
 	displayName = "Combat Medic";
 	uniformClass = "CFB_AR_Rolled_Uniform";
 	backpack = "CFB_AR_Backpack_Kitbag_Medic";
@@ -120,8 +120,8 @@ class CFB_AR_Soldier_LAT : B_soldier_LAT_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Base_Faction";
-	vehicleClass = "CFB_AR_VehicleClass";
+	faction = "CFB_CAF_AR";
+	vehicleClass = "CFB_Infantry_VehicleClass";
 	displayName = "Rifleman (AT)";
 	uniformClass = "CFB_AR_Rolled_Uniform";
 	backpack = "CFB_AR_Backpack_Kitbag_LAT";
@@ -139,8 +139,8 @@ class CFB_AR_Soldier_AmmoBearer : B_Soldier_A_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Base_Faction";
-	vehicleClass = "CFB_AR_VehicleClass";
+	faction = "CFB_CAF_AR";
+	vehicleClass = "CFB_Infantry_VehicleClass";
 	displayName = "Ammo Bearer (Rifle)";
 	uniformClass = "CFB_AR_Rolled_Uniform";
 	backpack = "CFB_AR_Backpack_Kitbag_Ammo";
@@ -176,8 +176,8 @@ class CFB_AR_Soldier_AT : B_soldier_AT_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Base_Faction";
-	vehicleClass = "CFB_AR_VehicleClass";
+	faction = "CFB_CAF_AR";
+	vehicleClass = "CFB_Infantry_VehicleClass";
 	displayName = "Missile Specialist (AT)";
 	uniformClass = "CFB_AR_Rolled_Uniform";
 	backpack = "CFB_AR_Backpack_Kitbag_AT";
@@ -195,8 +195,8 @@ class CFB_AR_Soldier_AA : B_soldier_AA_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Base_Faction";
-	vehicleClass = "CFB_AR_VehicleClass";
+	faction = "CFB_CAF_AR";
+	vehicleClass = "CFB_Infantry_VehicleClass";
 	displayName = "Missile Specialist (AA)";
 	uniformClass = "CFB_AR_Rolled_Uniform";
 	backpack = "CFB_AR_Backpack_Kitbag_AA";
@@ -214,8 +214,8 @@ class CFB_AR_Soldier_Engineer : B_engineer_F
 {
 	scope = 2;
 	scopeCurator = 2;
-	faction = "CFB_Base_Faction";
-	vehicleClass = "CFB_AR_VehicleClass";
+	faction = "CFB_CAF_AR";
+	vehicleClass = "CFB_Infantry_VehicleClass";
 	displayName = "Engineer";
 	uniformClass = "CFB_AR_Rolled_Uniform";
 	backpack = "CFB_AR_Backpack_Kitbag_Engineer";

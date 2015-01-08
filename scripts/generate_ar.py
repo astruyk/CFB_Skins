@@ -36,8 +36,8 @@ def processUnitLines(line, currentClassName, indentDepth):
 	# Transform the base class name from a TW solder to a AR soldier
 	line = line.replace("CFB_TW_Soldier", "CFB_AR_Soldier");
 	
-	# Change the base vehicle class so they show up in the AR section
-	line = line.replace("CFB_TW_VehicleClass", "CFB_AR_VehicleClass");
+	# Change the base vehicle class so they show up in the AR faction
+	line = line.replace("CFB_CAF_TW", "CFB_CAF_AR");
 	
 	# Map the uniforms from TW -> AR. Also make sure the skin file is selected correctly.
 	line = line.replace("CFB_TW_Uniform", "CFB_AR_Uniform");
@@ -67,8 +67,8 @@ def processGroupLines(line, currentClassName, indentDepth):
 	# Transform the base class name from TW groups to JTF2 groups
 	line = line.replace("CFB_Groups_CADPAT_TW", "CFB_Groups_AR");
 	
-	# Change the section names
-	line = line.replace("Infantry (CADPAT TW)", "Infantry (CADPAT AR)");
+	# Define these groups in the right faction
+	line = line.replace("CFB_CAF_TW", "CFB_CAF_AR");
 	
 	# Change the names of the units
 	line = line.replace("CFB_TW_Soldier", "CFB_AR_Soldier");
@@ -119,7 +119,7 @@ def processVestsLines(line, currentClassName, indentDepth):
 	return line;
 
 processFile("../src/@CFB_Skins/addons/cfb_skins/vehicles_units_tw.hpp", "../src/@CFB_Skins/addons/cfb_skins/vehicles_units_ar.hpp", processUnitLines);
-processFile("../src/@CFB_Skins/addons/cfb_skins/groups_tw.hpp", "../src/@CFB_Skins/addons/cfb_skins/groups_ar.hpp", processGroupLines);
+processFile("../src/@CFB_Skins/addons/cfb_skins/groups_tw_infantry.hpp", "../src/@CFB_Skins/addons/cfb_skins/groups_ar_infantry.hpp", processGroupLines);
 processFile("../src/@CFB_Skins/addons/cfb_skins/vehicles_backpacks_tw.hpp", "../src/@CFB_Skins/addons/cfb_skins/vehicles_backpacks_ar.hpp", processBackpackLines);
 processFile("../src/@CFB_Skins/addons/cfb_skins/weapons_headgear_tw.hpp", "../src/@CFB_Skins/addons/cfb_skins/weapons_headgear_ar.hpp", processHeadgearLines);
 processFile("../src/@CFB_Skins/addons/cfb_skins/weapons_uniforms_tw.hpp", "../src/@CFB_Skins/addons/cfb_skins/weapons_uniforms_ar.hpp", processUniformsLines);
