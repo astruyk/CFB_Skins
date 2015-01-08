@@ -149,8 +149,12 @@ class CfgPatches
 			"CFB_Rebel_Static_AT",
 			
 			// Vehicles
-			"CFB_LSSV_Olive",
-			"CFB_LSSV_Olive_Armed",
+			"CFB_TW_LSSV",
+			"CFB_TW_LSSV_Armed",
+			"CFB_AR_LSSV",
+			"CFB_AR_LSSV_Armed",
+			"CFB_CANSOFCOM_LSSV",
+			"CFB_CANSOFCOM_LSSV_Armed",
 
 			// Backpacks
 			"CFB_TW_Backpack_Assault",
