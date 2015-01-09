@@ -4,7 +4,7 @@ class CFB_RCAF_Helo_Pilot : B_Helipilot_F
 	scope = 2;
 	scopeCurator = 2;
 	faction = "CFB_RCAF";
-	vehicleClass = "CFB_RCAF_VehicleClass";
+	vehicleClass = "CFB_Crew_VehicleClass";
 	displayName = "Helicopter Pilot";
 	uniformClass = "CFB_RCAF_Coveralls_Sage";
 	hiddenSelectionsTextures[] = { "\cfb_skins\RCAF_Coveralls_Sage.paa" };
@@ -18,7 +18,7 @@ class CFB_RCAF_Helo_Crew : B_Helicrew_F
 	scope = 2;
 	scopeCurator = 2;
 	faction = "CFB_RCAF";
-	vehicleClass = "CFB_RCAF_VehicleClass";
+	vehicleClass = "CFB_Crew_VehicleClass";
 	displayName = "Helicopter Crew";
 	uniformClass = "CFB_RCAF_Coveralls_Sage";
 	hiddenSelectionsTextures[] = { "\cfb_skins\RCAF_Coveralls_Sage.paa" };

@@ -221,7 +221,8 @@ class CfgFactionClasses
 class CfgVehicleClasses
 {
 	class CFB_Infantry_VehicleClass { displayName = "Infantry"; };
-	class CFB_RCAF_VehicleClass { displayName = "RCAF"; };
+	class CFB_Crew_VehicleClass { displayName = "Pilots"; };
+	class CFB_RCAF_VehicleClass { displayName = "Air"; };
 	class CFB_Utility_VehicleClass { displayName = "Vehicles"; };
 	
 	class CFB_Rebel_VehicleClass { displayName = "Infantry"; }
