@@ -54,10 +54,10 @@ class CFB_Rebel_Marksman : O_G_Soldier_M_F
 		init = "(_this select 0) execVM ""\A3\Characters_F_Bootcamp\Data\Scripts\randomize_gue1.sqf""; [(_this select 0)] call CFB_fnc_hlcWeaponSwap;";
 	};
 	
-	uniformClass = "U_BG_Guerilla3_1";
+	uniformClass = "U_OG_Guerilla3_1";
 	backpack = "";
 	weapons[] = {"Binocular","srifle_DMR_01_F","Throw","Put"};
-	magazines[] = {"10Rnd_762x51_Mag","10Rnd_762x51_Mag","10Rnd_762x51_Mag","10Rnd_762x51_Mag","10Rnd_762x51_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","SmokeShellGreen","Chemlight_green","Chemlight_green","SmokeShell","10Rnd_762x51_Mag","10Rnd_762x51_Mag"};
+	magazines[] = {"10Rnd_762x51_Mag","10Rnd_762x51_Mag","10Rnd_762x51_Mag","10Rnd_762x51_Mag","10Rnd_762x51_Mag","SmokeShellGreen","Chemlight_green","Chemlight_green","SmokeShell","10Rnd_762x51_Mag","10Rnd_762x51_Mag"};
 	items[] = {"FirstAidKit","FirstAidKit","FirstAidKit"};
 	linkedItems[] = {"V_BandollierB_oli","H_Booniehat_oli","G_Bandanna_oli","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 };
