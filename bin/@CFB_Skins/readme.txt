@@ -5,6 +5,10 @@ Adds new skins for the base ARMA units inspired by Canadian Armed Forces.
 Check out the project at: https://github.com/astruyk/CFB_Skins for more information.
 
 Changelog
+2.4.1
+* Support RHS AK's for Rebels (in addition to CUP and HLC weapons).
+* Fix an RPT error with rebel sniper unit due to incorrect uniform.
+
 2.4.0
 * Add 2 variants of the CH-147 Chinook (Armed & Unarmed)
 * Add CADPAT TW and CADPAT AR variants of the ECH helmet
