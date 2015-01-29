@@ -5,7 +5,7 @@ Adds new skins for the base ARMA units inspired by Canadian Armed Forces.
 Check out the project at: https://github.com/astruyk/CFB_Skins for more information.
 
 Changelog
-2.5.0
+3.0.0
 * Support for spawning units in ALiVE. Units are sorted as follows:
   * Note - this includes a number of group/unit changes and is breaking for existing missions. Hopefully this will be the last time.
   * Canadian Forces (AR)
