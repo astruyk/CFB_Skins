@@ -50,6 +50,7 @@ class CFB_TW_Soldier_AR : B_soldier_AR_F
 	magazines[] = { "200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "HandGrenade", "MiniGrenade", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green" };
 	respawnMagazines[] = { "200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "HandGrenade", "MiniGrenade", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green" };
 };
+
 class CFB_TW_Soldier_MMG : CFB_TW_Soldier_AR
 {
 	displayName = "Autorifleman (MMG)";
