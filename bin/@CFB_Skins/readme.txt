@@ -5,6 +5,24 @@ Adds new skins for the base ARMA units inspired by Canadian Armed Forces.
 Check out the project at: https://github.com/astruyk/CFB_Skins for more information.
 
 Changelog
+2.5.0
+* Support for spawning units in ALiVE. Units are sorted as follows:
+  * Note - this includes a number of group/unit changes and is breaking for existing missions. Hopefully this will be the last time.
+  * Canadian Forces (AR)
+  * Canadian Forces (TW)
+  * Canadian Special Operations Forces Command
+  * Royal Canadian Air Force
+  * Rebels
+* Add red-cross medic patch in unit insignia (not yet added to medic roles but can be used in Arsenal)
+* Add some canadian flags:
+  * Canadian Flag
+  * Canadian Armed Forces
+  * Canadian Army
+  * Royal Canadian Navy
+  * Royal Canadian Air Force
+  * Royal Canadian Military College (Kingston)
+  * Royal Canadian Military College (Saint-Jean)
+
 2.4.1
 * Support RHS AK's for Rebels (in addition to CUP and HLC weapons).
 * Fix an RPT error with rebel sniper unit due to incorrect uniform.
