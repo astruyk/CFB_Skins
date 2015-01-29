@@ -330,3 +330,14 @@ class CfgFunctions
 		};
 	};
 };
+
+class CfgUnitInsignia
+{
+	class CFB_Medic
+	{
+		displayName = "CAF Medic"; // Name displayed in Arsenal
+		author = "Anton Struyk"; // Author displayed in Arsenal
+		texture = "\cfb_skins\CFB_Patch_Medic.paa"; // Image path
+		textureVehicle = ""; // Does nothing currently, reserved for future use
+	};
+};
