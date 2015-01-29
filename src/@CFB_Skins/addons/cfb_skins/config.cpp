@@ -241,6 +241,7 @@ class CfgVehicles
 	#include "vehicles_backpacks_ar.hpp"
 	#include "vehicles_backpacks_jtf2.hpp"
 	#include "vehicles_ground.hpp"
+	#include "vehicles_flags.hpp"
 };
  
 class cfgWeapons
