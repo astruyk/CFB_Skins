@@ -161,6 +161,15 @@ class CfgPatches
 			"CFB_TW_Backpack_Kitbag",
 			"CFB_AR_Backpack_Assault",
 			"CFB_AR_Backpack_Kitbag",
+			
+			// Flags
+			"CFB_Flag_Canada",
+			"CFB_Flag_Canadian_Armed_Forces",
+			"CFB_Flag_Canadian_Army",
+			"CFB_Flag_RCAF",
+			"CFB_Flag_RCN",
+			"CFB_Flag_RMC",
+			"CFB_Flag_RMC_Saint_Jean",
 		};
 	};
 };
