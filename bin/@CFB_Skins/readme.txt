@@ -11,6 +11,7 @@ Changelog
 * Fixed a few pop-up errors that would occur when placing JTF-2 units in Eden/Zeus
 * Fixed custom skin not showing correctly for CH-147 Chinook
 * Fixed some inconsistent naming for RCAF aircraft (now uses 'Transport' or 'Armed' to consistently)
+* Fixed some vehicles not showing up in the Arsenal Garage
 
 3.0.0
 * Support for spawning units in ALiVE. Units are sorted as follows:
