@@ -5,6 +5,13 @@ Adds new skins for the base ARMA units inspired by Canadian Armed Forces.
 Check out the project at: https://github.com/astruyk/CFB_Skins for more information.
 
 Changelog
+3.0.1
+* Fixed an error that popped up on startup with CFB_Skins loaded
+* Fixed a number of RPT errors related to incorrect inheritance definitions in CfgWeapons
+* Fixed a few pop-up errors that would occur when placing JTF-2 units in Eden/Zeus
+* Fixed custom skin not showing correctly for CH-147 Chinook
+* Fixed some inconsistent naming for RCAF aircraft (now uses 'Transport' or 'Armed' to consistently)
+
 3.0.0
 * Support for spawning units in ALiVE. Units are sorted as follows:
   * Note - this includes a number of group/unit changes and is breaking for existing missions. Hopefully this will be the last time.
