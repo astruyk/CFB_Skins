@@ -32,7 +32,7 @@ class CFB_Helo_Griffon : I_Heli_light_03_F
 	side = 1;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "CH-146 Griffon (armed)";
+	displayName = "CH-146 Griffon (Armed)";
 	faction = "CFB_RCAF";
 	vehicleClass = "CFB_RCAF_VehicleClass";
 	crew = "CFB_RCAF_Helo_Pilot";
@@ -45,7 +45,7 @@ class CFB_Helo_Griffon_Unarmed : I_Heli_light_03_unarmed_F
 	side = 1;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "CH-146 Griffon (transport)";
+	displayName = "CH-146 Griffon (Transport)";
 	faction = "CFB_RCAF";
 	vehicleClass = "CFB_RCAF_VehicleClass";
 	crew = "CFB_RCAF_Helo_Pilot";
@@ -71,7 +71,7 @@ class CFB_Helo_Chinook : B_Heli_Transport_03_F
 	side = 1;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "CH-147 Chinook";
+	displayName = "CH-147 Chinook (Armed)";
 	faction = "CFB_RCAF";
 	vehicleClass = "CFB_RCAF_VehicleClass";
 	crew = "CFB_RCAF_Helo_Pilot";
@@ -84,7 +84,7 @@ class CFB_Helo_Chinook_Unarmed : B_Heli_Transport_03_unarmed_F
 	side = 1;
 	scope = 2;
 	scopeCurator = 2;
-	displayName = "CH-147 Chinook (Unarmed)";
+	displayName = "CH-147 Chinook (Transport)";
 	faction = "CFB_RCAF";
 	vehicleClass = "CFB_RCAF_VehicleClass";
 	crew = "CFB_RCAF_Helo_Pilot";
