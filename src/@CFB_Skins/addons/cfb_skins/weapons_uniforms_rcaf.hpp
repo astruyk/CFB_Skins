@@ -1,4 +1,7 @@
-class U_B_HelipilotCoveralls;
+class U_B_HelipilotCoveralls : Uniform_Base
+{
+	class ItemInfo;
+};
 class CFB_RCAF_Coveralls_Sage : U_B_HelipilotCoveralls
 {
 	scope = 2;
@@ -8,11 +11,8 @@ class CFB_RCAF_Coveralls_Sage : U_B_HelipilotCoveralls
 	model = "\A3\Characters_F\Common\Suitpacks\suitpack_civilian_F.p3d";
 	author = "Anton Struyk";
 
-	class ItemInfo : UniformItem
+	class ItemInfo : ItemInfo
 	{
-		uniformModel = "-";
 		uniformClass = "CFB_RCAF_Helo_Pilot";
-		containerClass = "Supply40";
-		mass = 60;
 	};
 };

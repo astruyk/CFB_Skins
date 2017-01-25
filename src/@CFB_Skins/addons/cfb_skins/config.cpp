@@ -3,7 +3,7 @@ class CfgPatches
 	class CFB_Skins
 	{
 		requiredVersion = 1;
-		author[] = { "Anton Struyk" };
+		author = "Anton Struyk";
 		authorUrl = "https://github.com/astruyk/";
 		version = 3.0.0;
 		versionStr = "3.0.0";
@@ -257,7 +257,29 @@ class cfgWeapons
 {
 	// Forward declarations for multiple files.
 	class UniformItem;
-	class ItemInfo;
+	class VestItem;
+	class Uniform_Base;
+	class Vest_NoCamo_Base;
+	class U_B_CombatUniform_mcam : Uniform_Base
+	{
+		class ItemInfo;
+	};
+	class U_B_CombatUniform_mcam_vest : Uniform_Base
+	{
+		class ItemInfo;
+	};
+	class U_B_CombatUniform_mcam_tshirt : Uniform_Base
+	{
+		class ItemInfo;
+	};
+	class V_PlateCarrier1_rgr : Vest_NoCamo_Base
+	{
+		class ItemInfo;
+	};
+	class V_PlateCarrier2_rgr : V_PlateCarrier1_rgr
+	{
+		class ItemInfo;
+	};
 
 	//#include "weapons_optics.hpp"
 	#include "weapons_rifles.hpp"

@@ -14,7 +14,6 @@ class CFB_AR_Vest_Tactical : V_TacVest_oli
 	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_AR_Vest_Tactical.paa"};
 };
 
-// class V_PlateCarrier1_rgr;
 class CFB_AR_Vest_PlateCarrier1 : V_PlateCarrier1_rgr
 {
 	side = 1;
@@ -25,13 +24,13 @@ class CFB_AR_Vest_PlateCarrier1 : V_PlateCarrier1_rgr
 	picture = "\cfb_skins\ui\CFB_AR_Vest_PlateCarrier1.paa";
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_AR_Vest_NATO.paa"};
+	
 	class ItemInfo : ItemInfo
 	{
 		hiddenSelections[] = {"camo"};
 	};
 };
 
-// class V_PlateCarrier2_rgr;
 class CFB_AR_Vest_PlateCarrier2 : V_PlateCarrier2_rgr
 {
 	side = 1;
@@ -42,6 +41,7 @@ class CFB_AR_Vest_PlateCarrier2 : V_PlateCarrier2_rgr
 	picture = "\cfb_skins\ui\CFB_AR_Vest_PlateCarrier2.paa";
 	hiddenSelections[] = {"camo"};
 	hiddenSelectionsTextures[] = {"\cfb_skins\CADPAT_AR_Vest_NATO.paa"};
+	
 	class ItemInfo : ItemInfo
 	{
 		hiddenSelections[] = {"camo"};

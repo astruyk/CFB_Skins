@@ -1,4 +1,3 @@
-class U_B_CombatUniform_mcam;
 class CFB_TW_Uniform : U_B_CombatUniform_mcam
 {
 	scope = 2;
@@ -14,7 +13,6 @@ class CFB_TW_Uniform : U_B_CombatUniform_mcam
 	};
 };
 
-class U_B_CombatUniform_mcam_vest;
 class CFB_TW_Rolled_Uniform : U_B_CombatUniform_mcam_vest
 {
 	scope = 2;
@@ -29,7 +27,6 @@ class CFB_TW_Rolled_Uniform : U_B_CombatUniform_mcam_vest
 	};
 };
 
-class U_B_CombatUniform_mcam_tshirt;
 class CFB_TW_Tshirt_Uniform : U_B_CombatUniform_mcam_tshirt
 {
 	scope = 2;
