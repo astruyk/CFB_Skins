@@ -29,6 +29,7 @@ class CFB_TW_LSSV : CFB_Base_LSSV
 	scope = 2;
 	scopeCurator = 2;
 	faction = "CFB_CAF_TW";
+	forceInGarage = 1;
 };
 
 class CFB_AR_LSSV : CFB_Base_LSSV
@@ -36,6 +37,7 @@ class CFB_AR_LSSV : CFB_Base_LSSV
 	scope = 2;
 	scopeCurator = 2;
 	faction = "CFB_CAF_AR";
+	forceInGarage = 1;
 };
 
 class CFB_CANSOFCOM_LSSV : CFB_Base_LSSV
@@ -43,6 +45,7 @@ class CFB_CANSOFCOM_LSSV : CFB_Base_LSSV
 	scope = 2;
 	scopeCurator = 2;
 	faction = "CFB_CANSOFCOM";
+	forceInGarage = 1;
 };
 
 class CFB_TW_LSSV_Armed : CFB_Base_LSSV_Armed
@@ -50,6 +53,7 @@ class CFB_TW_LSSV_Armed : CFB_Base_LSSV_Armed
 	scope = 2;
 	scopeCurator = 2;
 	faction = "CFB_CAF_TW";
+	forceInGarage = 1;
 };
 
 class CFB_AR_LSSV_Armed : CFB_Base_LSSV_Armed
@@ -57,6 +61,7 @@ class CFB_AR_LSSV_Armed : CFB_Base_LSSV_Armed
 	scope = 2;
 	scopeCurator = 2;
 	faction = "CFB_CAF_AR";
+	forceInGarage = 1;
 };
 
 class CFB_CANSOFCOM_LSSV_Armed : CFB_Base_LSSV_Armed
@@ -64,4 +69,5 @@ class CFB_CANSOFCOM_LSSV_Armed : CFB_Base_LSSV_Armed
 	scope = 2;
 	scopeCurator = 2;
 	faction = "CFB_CANSOFCOM";
+	forceInGarage = 1;
 };
